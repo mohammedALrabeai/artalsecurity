@@ -1,0 +1,15 @@
+# robots.txt for https://artalsecurity.com
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl-delay for all bots (optional, reduces server load)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://artalsecurity.com/sitemap.xml

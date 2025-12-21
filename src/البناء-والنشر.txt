@@ -1,0 +1,145 @@
+🚀 دليل البناء والنشر السريع - Artal Security
+=============================================
+
+✅ التحديثات المنجزة:
+---------------------
+1. ✅ عنوان التاب: "Artal Unified Security Services"
+2. ✅ إنشاء مجلد /public/images/ للصور والأيقونات
+3. ✅ تحديث جميع المسارات في index.html
+4. ✅ Vite مُعد لنسخ public/ تلقائياً إلى dist/
+
+---
+
+📸 الخطوة الأولى: إضافة الصور
+-----------------------------
+اذهب إلى: /public/images/
+واقرأ الملفات:
+  - صور-مطلوبة.txt        (قائمة سريعة)
+  - README.txt             (إرشادات كاملة)
+  - /public/IMAGES-GUIDE.md (دليل شامل مع أمثلة)
+
+الصور المطلوبة (6 ملفات):
+1. favicon.svg
+2. favicon-16x16.png
+3. favicon-32x32.png
+4. apple-touch-icon.png
+5. logo.png
+6. og-image.jpg ⭐ (1200×630 بكسل - للمشاركة الاجتماعية)
+
+---
+
+🔨 البناء
+----------
+npm run build
+
+النتيجة: مجلد dist/ يحتوي على:
+dist/
+├── index.html
+├── assets/
+│   ├── index-xxxxx.js
+│   └── index-xxxxx.css
+├── images/              ← صورك هنا!
+│   ├── favicon.svg
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── apple-touch-icon.png
+│   ├── logo.png
+│   └── og-image.jpg
+├── robots.txt           ← SEO
+├── sitemap.xml          ← SEO
+└── site.webmanifest     ← PWA
+
+---
+
+📤 النشر على Hostinger
+-----------------------
+1. افتح File Manager في Hostinger
+2. اذهب إلى public_html/
+3. احذف المحتوى القديم
+4. ارفع كل محتويات dist/ (اسحب وأفلت)
+5. تأكد من رفع:
+   ✅ index.html
+   ✅ مجلد assets/
+   ✅ مجلد images/
+   ✅ robots.txt
+   ✅ sitemap.xml
+   ✅ site.webmanifest
+
+---
+
+🧪 الاختبار
+-----------
+1. افتح https://artalsecurity.com
+2. تحقق من:
+   ✅ الأيقونة في التاب
+   ✅ عنوان التاب: "Artal Unified Security Services"
+   ✅ الموقع يعمل بدون أخطاء
+
+3. اختبار المشاركة:
+   - أرسل الرابط في واتساب
+   - يجب أن تظهر صورة og-image.jpg
+
+4. اختبار SEO:
+   - https://artalsecurity.com/sitemap.xml
+   - https://artalsecurity.com/robots.txt
+
+---
+
+📊 هيكل المشروع النهائي
+------------------------
+artal-website/
+├── public/                  ← المصادر الثابتة
+│   ├── images/             ← ضع صورك هنا!
+│   ├── robots.txt          ✅
+│   ├── sitemap.xml         ✅
+│   ├── site.webmanifest    ✅
+│   └── IMAGES-GUIDE.md     📖 اقرأني!
+├── src/
+│   ├── main.tsx
+│   └── styles/
+├── components/             ← مكونات React
+├── context/                ← اللغات
+├── index.html              ✅ (محدّث)
+├── vite.config.ts          ✅
+└── package.json
+
+---
+
+⚡ أوامر سريعة
+-------------
+npm run dev       # التطوير المحلي (http://localhost:5173)
+npm run build     # البناء للإنتاج
+npm run preview   # معاينة البناء
+
+---
+
+🎯 الملخص
+---------
+1. ✅ حذف ملفات الشروحات
+2. ✅ عنوان التاب محدّث
+3. ✅ مجلد images/ جاهز
+4. ⏳ أضف الصور المطلوبة
+5. ⏳ npm run build
+6. ⏳ ارفع على Hostinger
+
+---
+
+💡 نصيحة ذهبية
+--------------
+صورة og-image.jpg (1200×630) هي أول انطباع!
+اجعلها احترافية:
+- شعار واضح
+- نص قصير
+- ألوان ذهبية (#EFB621)
+- حجم < 300KB
+
+---
+
+📞 الدعم
+--------
+إذا واجهت مشكلة:
+1. تأكد من أسماء الملفات صحيحة
+2. تأكد من أحجام الصور صحيحة
+3. تأكد من رفع كل محتويات dist/
+
+🚀 الموقع جاهز 100% للبناء والنشر!
