@@ -1,7 +1,7 @@
 import { Shield, Award, Users, CheckCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
-import safetyImage from 'figma:asset/0f4aaf0a591ac08501f6bac982d71a8637896729.png';
+import safetyImage from '../assets/safety-quality.jpg';
 
 export function SafetyQualitySection() {
   const { t } = useLanguage();
@@ -53,9 +53,13 @@ export function SafetyQualitySection() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#EFB621]/20 via-[#FFD700]/20 to-[#EFB621]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src={safetyImage} 
+                <img
+                  src={safetyImage}
                   alt={t('safety.imageAlt')}
+                  loading="lazy"
+                  decoding="async"
+                  width={1430}
+                  height={950}
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 {/* Overlay with motto */}

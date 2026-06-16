@@ -32,8 +32,9 @@ export function Header() {
   const menuItems = [
     { label: t('nav.home'), href: '/', type: 'route' },
     { label: t('nav.about'), href: '#about', type: 'anchor' },
-    { label: t('nav.services'), href: '#services', type: 'anchor' },
+    { label: t('nav.services'), href: '/services', type: 'route' },
     { label: t('nav.experience'), href: '#experience', type: 'anchor' },
+    { label: language === 'ar' ? 'المدوّنة' : 'Blog', href: '/blog', type: 'route' },
     { label: t('nav.careers'), href: '/careers', type: 'route' },
     { label: t('nav.contact'), href: '#contact', type: 'anchor' },
   ];

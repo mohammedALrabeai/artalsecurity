@@ -5,8 +5,14 @@ import { CareersPage } from './pages/CareersPage';
 import { SectorPage } from './pages/SectorPage';
 import { SectorsIndexPage } from './pages/SectorsIndexPage';
 import { LocationPage } from './pages/LocationPage';
+import { BlogIndexPage } from './pages/BlogIndexPage';
+import { ArticlePage } from './pages/ArticlePage';
+import { ServicesIndexPage } from './pages/ServicesIndexPage';
+import { ServicePage } from './pages/ServicePage';
 import { SECTOR_SLUGS } from './data/sectors';
 import { CITY_SLUGS } from './data/cities';
+import { ARTICLE_SLUGS } from './data/articles';
+import { SERVICE_SLUGS } from './data/services';
 
 /**
  * Route table for vite-react-ssg. Both locale trees are prerendered to static
@@ -24,6 +30,13 @@ export const routes: RouteRecord[] = [
     children: [
       { index: true, id: 'en-home', Component: HomePage },
       { path: 'careers', id: 'en-careers', Component: CareersPage },
+      { path: 'services', id: 'en-services-index', Component: ServicesIndexPage },
+      {
+        path: 'services/:slug',
+        id: 'en-service',
+        Component: ServicePage,
+        getStaticPaths: () => SERVICE_SLUGS.map((s) => `services/${s}`),
+      },
       { path: 'sectors', id: 'en-sectors-index', Component: SectorsIndexPage },
       {
         path: 'sectors/:slug',
@@ -37,6 +50,13 @@ export const routes: RouteRecord[] = [
         Component: LocationPage,
         getStaticPaths: () => CITY_SLUGS.map((s) => `locations/${s}`),
       },
+      { path: 'blog', id: 'en-blog-index', Component: BlogIndexPage },
+      {
+        path: 'blog/:slug',
+        id: 'en-article',
+        Component: ArticlePage,
+        getStaticPaths: () => ARTICLE_SLUGS.map((s) => `blog/${s}`),
+      },
     ],
   },
   {
@@ -46,6 +66,13 @@ export const routes: RouteRecord[] = [
     children: [
       { index: true, id: 'ar-home', Component: HomePage },
       { path: 'careers', id: 'ar-careers', Component: CareersPage },
+      { path: 'services', id: 'ar-services-index', Component: ServicesIndexPage },
+      {
+        path: 'services/:slug',
+        id: 'ar-service',
+        Component: ServicePage,
+        getStaticPaths: () => SERVICE_SLUGS.map((s) => `services/${s}`),
+      },
       { path: 'sectors', id: 'ar-sectors-index', Component: SectorsIndexPage },
       {
         path: 'sectors/:slug',
@@ -58,6 +85,13 @@ export const routes: RouteRecord[] = [
         id: 'ar-location',
         Component: LocationPage,
         getStaticPaths: () => CITY_SLUGS.map((s) => `locations/${s}`),
+      },
+      { path: 'blog', id: 'ar-blog-index', Component: BlogIndexPage },
+      {
+        path: 'blog/:slug',
+        id: 'ar-article',
+        Component: ArticlePage,
+        getStaticPaths: () => ARTICLE_SLUGS.map((s) => `blog/${s}`),
       },
     ],
   },

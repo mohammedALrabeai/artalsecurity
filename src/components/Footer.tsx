@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage, useLocalePath } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
 import { SECTORS } from '../data/sectors';
+import { SERVICES } from '../data/services';
 import { KeywordLinks } from './KeywordLinks';
 
 export function Footer() {
@@ -26,6 +27,7 @@ export function Footer() {
       { label: t('footer.about'), href: '#about', type: 'anchor' },
       { label: t('footer.vision'), href: '#vision', type: 'anchor' },
       { label: t('footer.experience'), href: '#experience', type: 'anchor' },
+      { label: language === 'ar' ? 'المدوّنة' : 'Blog', href: '/blog', type: 'route' },
       { label: t('nav.careers'), href: '/careers', type: 'route' },
       { label: t('footer.certificates'), href: '#certificates', type: 'anchor' },
     ],
@@ -33,6 +35,11 @@ export function Footer() {
     sectors: SECTORS.map((s) => ({
       label: s[language].name,
       href: `/sectors/${s.slug}`,
+      type: 'route' as const,
+    })),
+    services: SERVICES.map((s) => ({
+      label: s[language].name,
+      href: `/services/${s.slug}`,
       type: 'route' as const,
     })),
   };
@@ -190,6 +197,25 @@ export function Footer() {
               </h4>
               <ul className="space-y-3">
                 {footerLinks.sectors.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      to={localePath(link.href)}
+                      className="text-gray-400 hover:text-[#EFB621] transition-colors duration-300 flex items-center gap-2 group"
+                    >
+                      <span className="w-0 h-0.5 bg-[#EFB621] group-hover:w-4 transition-all duration-300" />
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <h4 className="text-lg mb-4 mt-8">
+                <Link to={localePath('/services')} className="hover:text-[#EFB621] transition-colors">
+                  {language === 'ar' ? 'خدماتنا' : 'Our Services'}
+                </Link>
+              </h4>
+              <ul className="space-y-3">
+                {footerLinks.services.map((link, index) => (
                   <li key={index}>
                     <Link
                       to={localePath(link.href)}
