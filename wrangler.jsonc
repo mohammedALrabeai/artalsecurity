@@ -1,0 +1,11 @@
+{
+  // إعداد نشر Cloudflare: موقع static (ملفات build/) — وليس SPA ولا Worker برمجي.
+  // البناء يتم عبر "Build command" = npm run build (vite-react-ssg)، ثم يرفع هذا المجلد.
+  "name": "artalsecurity",
+  "compatibility_date": "2026-06-16",
+  "assets": {
+    "directory": "./build"
+    // ملاحظة: لا نضع not_found_handling=single-page-application — الموقع متعدّد الصفحات (SSG)،
+    // وCloudflare يحوّل /sectors/industrial إلى /sectors/industrial.html تلقائياً.
+  }
+}
