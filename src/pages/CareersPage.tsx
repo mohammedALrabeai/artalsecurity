@@ -113,7 +113,7 @@ export function CareersPage() {
           ? 'انضم إلى فريق أرتال للخدمات الأمنية. نوفر فرص وظيفية في مجال الأمن والسلامة مع رواتب تنافسية وبيئة عمل احترافية.'
           : 'Join Artal Security Services team. We offer career opportunities in security and safety with competitive salaries and professional work environment.'
         }
-        canonical="https://artalsecurity.com/careers"
+        path="/careers"
       />
 
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-28 pb-20">

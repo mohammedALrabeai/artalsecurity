@@ -11,7 +11,11 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # SPA fallback
+  # Serve prerendered SSG pages for pretty URLs:  /careers -> /careers.html
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+
+  # SPA fallback for any client-only route without a prerendered file
   RewriteRule ^ index.html [L]
 </IfModule>
 

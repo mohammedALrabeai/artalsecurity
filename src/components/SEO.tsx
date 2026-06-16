@@ -1,129 +1,72 @@
-import { useEffect } from 'react';
+import { Head } from 'vite-react-ssg';
 import { useLanguage } from '../context/LanguageContext';
+
+const SITE = 'https://artalsecurity.com';
 
 interface SEOProps {
   title?: string;
   description?: string;
   keywords?: string;
   ogImage?: string;
-  canonical?: string;
+  /** Language-neutral route path, e.g. '/' or '/sectors/industrial'. Canonical
+   *  + hreflang alternates are derived from it automatically. */
+  path?: string;
+  /** JSON-LD structured data — single object or array of objects */
+  jsonLd?: object | object[];
 }
 
+/**
+ * SEO component — renders real <head> tags into the prerendered HTML via
+ * vite-react-ssg's <Head> (react-helmet-async). Works for SSG + client.
+ */
 export function SEO({
   title,
   description,
   keywords,
   ogImage = 'https://artalsecurity.com/og-image.jpg',
-  canonical = 'https://artalsecurity.com'
+  path = '/',
+  jsonLd,
 }: SEOProps) {
   const { language } = useLanguage();
+  const dir = language === 'ar' ? 'rtl' : 'ltr';
+  const blocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
-  useEffect(() => {
-    // Update HTML lang and dir attributes
-    document.documentElement.lang = language;
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  const clean = path.startsWith('/') ? path : `/${path}`;
+  const enUrl = `${SITE}${clean}`;
+  const arUrl = clean === '/' ? `${SITE}/ar` : `${SITE}/ar${clean}`;
+  const canonical = language === 'ar' ? arUrl : enUrl;
 
-    // Update title
-    if (title) {
-      document.title = title;
-      updateMetaTag('property', 'og:title', title);
-      updateMetaTag('name', 'twitter:title', title);
-    }
+  return (
+    <Head>
+      <html lang={language} dir={dir} />
 
-    // Update description
-    if (description) {
-      updateMetaTag('name', 'description', description);
-      updateMetaTag('property', 'og:description', description);
-      updateMetaTag('name', 'twitter:description', description);
-    }
+      {title && <title>{title}</title>}
+      {title && <meta property="og:title" content={title} />}
+      {title && <meta name="twitter:title" content={title} />}
 
-    // Update keywords
-    if (keywords) {
-      updateMetaTag('name', 'keywords', keywords);
-    }
+      {description && <meta name="description" content={description} />}
+      {description && <meta property="og:description" content={description} />}
+      {description && <meta name="twitter:description" content={description} />}
 
-    // Update OG image
-    updateMetaTag('property', 'og:image', ogImage);
-    updateMetaTag('name', 'twitter:image', ogImage);
+      {keywords && <meta name="keywords" content={keywords} />}
 
-    // Update canonical URL
-    updateLinkTag('canonical', canonical);
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="Artal Unified Security Services" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={ogImage} />
 
-    // Update language-specific alternate links
-    updateLinkTag('alternate', canonical, language);
-  }, [language, title, description, keywords, ogImage, canonical]);
+      <link rel="canonical" href={canonical} />
+      <link rel="alternate" hrefLang="en" href={enUrl} />
+      <link rel="alternate" hrefLang="ar" href={arUrl} />
+      <link rel="alternate" hrefLang="x-default" href={enUrl} />
 
-  return null;
-}
-
-// Helper function to update meta tags
-function updateMetaTag(attribute: string, key: string, content: string) {
-  let element = document.querySelector(`meta[${attribute}="${key}"]`);
-  
-  if (!element) {
-    element = document.createElement('meta');
-    element.setAttribute(attribute, key);
-    document.head.appendChild(element);
-  }
-  
-  element.setAttribute('content', content);
-}
-
-// Helper function to update link tags
-function updateLinkTag(rel: string, href: string, hreflang?: string) {
-  const selector = hreflang 
-    ? `link[rel="${rel}"][hreflang="${hreflang}"]`
-    : `link[rel="${rel}"]`;
-    
-  let element = document.querySelector(selector);
-  
-  if (!element) {
-    element = document.createElement('link');
-    element.setAttribute('rel', rel);
-    if (hreflang) {
-      element.setAttribute('hreflang', hreflang);
-    }
-    document.head.appendChild(element);
-  }
-  
-  element.setAttribute('href', href);
-}
-
-// Hook for dynamic SEO
-export function useSEO(props: SEOProps) {
-  const { language } = useLanguage();
-
-  useEffect(() => {
-    const { title, description, keywords, ogImage, canonical } = props;
-
-    // Update HTML attributes
-    document.documentElement.lang = language;
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
-
-    // Update meta tags
-    if (title) {
-      document.title = title;
-      updateMetaTag('property', 'og:title', title);
-      updateMetaTag('name', 'twitter:title', title);
-    }
-
-    if (description) {
-      updateMetaTag('name', 'description', description);
-      updateMetaTag('property', 'og:description', description);
-      updateMetaTag('name', 'twitter:description', description);
-    }
-
-    if (keywords) {
-      updateMetaTag('name', 'keywords', keywords);
-    }
-
-    if (ogImage) {
-      updateMetaTag('property', 'og:image', ogImage);
-      updateMetaTag('name', 'twitter:image', ogImage);
-    }
-
-    if (canonical) {
-      updateLinkTag('canonical', canonical);
-    }
-  }, [language, props]);
+      {blocks.map((block, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(block)}
+        </script>
+      ))}
+    </Head>
+  );
 }

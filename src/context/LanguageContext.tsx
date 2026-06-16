@@ -1,6 +1,6 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-type Language = 'en' | 'ar';
+export type Language = 'en' | 'ar';
 
 interface LanguageContextType {
   language: Language;
@@ -10,8 +10,19 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en');
+export function LanguageProvider({
+  children,
+  initialLanguage = 'en',
+}: {
+  children: ReactNode;
+  initialLanguage?: Language;
+}) {
+  const [language, setLanguage] = useState<Language>(initialLanguage);
+
+  // Keep state in sync when navigating between locale route trees (/ ↔ /ar)
+  useEffect(() => {
+    setLanguage(initialLanguage);
+  }, [initialLanguage]);
 
   const t = (key: string): string => {
     return translations[language][key] || key;
@@ -32,6 +43,28 @@ export function useLanguage() {
     throw new Error('useLanguage must be used within LanguageProvider');
   }
   return context;
+}
+
+/**
+ * Returns a function that prefixes a route path with the active locale.
+ * In Arabic, '/careers' → '/ar/careers' and '/' → '/ar'. Anchors (#...) and
+ * external links should NOT be passed through this helper.
+ */
+export function useLocalePath() {
+  const { language } = useLanguage();
+  return (path: string): string => {
+    const clean = path.startsWith('/') ? path : `/${path}`;
+    if (language !== 'ar') return clean;
+    return clean === '/' ? '/ar' : `/ar${clean}`;
+  };
+}
+
+/** Strips/adds the /ar prefix to swap a path's locale. */
+export function swapLocalePath(pathname: string, target: Language): string {
+  const isAr = pathname === '/ar' || pathname.startsWith('/ar/');
+  const neutral = isAr ? pathname.replace(/^\/ar/, '') || '/' : pathname;
+  if (target === 'ar') return neutral === '/' ? '/ar' : `/ar${neutral}`;
+  return neutral;
 }
 
 const translations: Record<Language, Record<string, string>> = {

@@ -1,10 +1,13 @@
 import { Shield, Phone, Mail, MapPin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage, useLocalePath } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
+import { SECTORS } from '../data/sectors';
+import { KeywordLinks } from './KeywordLinks';
 
 export function Footer() {
   const { t, language } = useLanguage();
+  const localePath = useLocalePath();
 
   const emails = [
     'info@artalgroup.net',
@@ -26,12 +29,12 @@ export function Footer() {
       { label: t('nav.careers'), href: '/careers', type: 'route' },
       { label: t('footer.certificates'), href: '#certificates', type: 'anchor' },
     ],
-    services: [
-      { label: t('footer.security'), href: '#services', type: 'anchor' },
-      { label: t('footer.cctv'), href: '#services', type: 'anchor' },
-      { label: t('footer.access'), href: '#services', type: 'anchor' },
-      { label: t('footer.training'), href: '#services', type: 'anchor' },
-    ],
+    // قطاعات العملاء — روابط داخلية لصفحات الهبوط (تظهر في كل الصفحات)
+    sectors: SECTORS.map((s) => ({
+      label: s[language].name,
+      href: `/sectors/${s.slug}`,
+      type: 'route' as const,
+    })),
   };
 
   const socialLinks = [
@@ -152,7 +155,7 @@ export function Footer() {
             </div>
           </ScrollReveal>
 
-          {/* Company Links */}
+          {/* Company + Sectors Links */}
           <ScrollReveal direction="up" delay={200}>
             <div>
               <h4 className="text-lg mb-6">{t('footer.company')}</h4>
@@ -161,7 +164,7 @@ export function Footer() {
                   <li key={index}>
                     {link.type === 'route' ? (
                       <Link
-                        to={link.href}
+                        to={localePath(link.href)}
                         className="text-gray-400 hover:text-[#EFB621] transition-colors duration-300 flex items-center gap-2 group"
                       >
                         <span className="w-0 h-0.5 bg-[#EFB621] group-hover:w-4 transition-all duration-300" />
@@ -176,6 +179,25 @@ export function Footer() {
                         {link.label}
                       </a>
                     )}
+                  </li>
+                ))}
+              </ul>
+
+              <h4 className="text-lg mb-4 mt-8">
+                <Link to={localePath('/sectors')} className="hover:text-[#EFB621] transition-colors">
+                  {language === 'ar' ? 'القطاعات التي نخدمها' : 'Sectors We Serve'}
+                </Link>
+              </h4>
+              <ul className="space-y-3">
+                {footerLinks.sectors.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      to={localePath(link.href)}
+                      className="text-gray-400 hover:text-[#EFB621] transition-colors duration-300 flex items-center gap-2 group"
+                    >
+                      <span className="w-0 h-0.5 bg-[#EFB621] group-hover:w-4 transition-all duration-300" />
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -265,8 +287,11 @@ export function Footer() {
           </ScrollReveal>
         </div>
 
+        {/* Keyword / service quick-links (internal links for SEO) */}
+        <KeywordLinks />
+
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-800">
+        <div className="pt-8 mt-10 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
               © {new Date().getFullYear()} {t('footer.rights')}

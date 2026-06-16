@@ -1,16 +1,18 @@
 import { Shield, Menu, X, Languages } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLanguage, useLocalePath, swapLocalePath } from '../context/LanguageContext';
 import { QuoteButton } from './QuoteButton';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
+  const { language, t } = useLanguage();
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const navigate = useNavigate();
+  const localePath = useLocalePath();
+  const isHomePage = location.pathname === '/' || location.pathname === '/ar';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,15 +39,16 @@ export function Header() {
   ];
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'ar' : 'en');
+    const target = language === 'en' ? 'ar' : 'en';
+    navigate(swapLocalePath(location.pathname, target));
   };
 
   const handleNavClick = (item: typeof menuItems[0]) => {
     setIsMenuOpen(false);
     
     if (item.type === 'anchor' && !isHomePage) {
-      // If on a different page, navigate to home first then scroll
-      window.location.href = '/' + item.href;
+      // If on a different page, go to the locale home then scroll to the anchor
+      window.location.href = localePath('/') + item.href;
     }
   };
 
@@ -63,7 +66,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to={localePath('/')} className="flex items-center gap-3">
             <div className={`bg-[#EFB621] p-2 rounded-lg transition-all duration-300 ${
               isScrolled ? 'scale-90' : 'scale-100'
             }`}>
@@ -81,7 +84,7 @@ export function Header() {
               item.type === 'route' ? (
                 <Link
                   key={item.label}
-                  to={item.href}
+                  to={localePath(item.href)}
                   className="text-gray-700 hover:text-[#EFB621] transition-all duration-300 relative group"
                 >
                   {item.label}
@@ -137,7 +140,7 @@ export function Header() {
               item.type === 'route' ? (
                 <Link
                   key={item.label}
-                  to={item.href}
+                  to={localePath(item.href)}
                   className="block py-2 text-gray-700 hover:text-[#EFB621] transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
