@@ -23,7 +23,7 @@ export function SEO({
   title,
   description,
   keywords,
-  ogImage = 'https://artalsecurity.com/og-image.jpg',
+  ogImage = 'https://artalsecurity.com/images/artal_security3.jpg',
   path = '/',
   jsonLd,
 }: SEOProps) {

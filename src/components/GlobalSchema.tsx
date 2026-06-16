@@ -16,8 +16,8 @@ const ORGANIZATION = {
   name: 'Artal Unified Security Services Co.',
   alternateName: 'شركة أرتال الموحدة للحراسات الأمنية',
   url: SITE,
-  logo: `${SITE}/favicon.png`,
-  image: `${SITE}/favicon.png`,
+  logo: `${SITE}/images/logo.png`,
+  image: `${SITE}/images/artal_security3.jpg`,
   slogan: 'Protecting lives, property and facilities across Saudi Arabia',
   description:
     'Licensed private security guarding company in Saudi Arabia (Ministry of Interior — High Authority for Industrial Security, License No. 361), serving industrial, commercial, construction and government facilities.',

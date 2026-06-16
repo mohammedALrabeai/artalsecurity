@@ -50,20 +50,21 @@ export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Background images array
+  // صور مُضمّنة في المستودع (public/images) ومُحسّنة — تعمل من أي استضافة (Cloudflare/هوستنجر)
   const backgroundImages = [
-    "https://artalsecurity.com/public/images/artal_security3.jpeg",
-    "https://artalsecurity.com/public/images/artal_security6.jpeg",
-    "https://artalsecurity.com/public/images/artal_security7.jpeg",
-    "https://artalsecurity.com/public/images/artal_security9.jpeg",
-    "https://artalsecurity.com/public/images/artal_security10.jpeg",
-    "https://artalsecurity.com/public/images/artal_security12.jpeg",
-    "https://artalsecurity.com/public/images/artal_security15.jpeg",
-    "https://artalsecurity.com/public/images/artal_security18.jpeg",
-    "https://artalsecurity.com/public/images/artal_security21.png",
-    "https://artalsecurity.com/public/images/artal_security2.jpeg",
-    "https://artalsecurity.com/public/images/artal_security4.jpeg",
-    "https://artalsecurity.com/public/images/artal_security5.jpeg",
-    "https://artalsecurity.com/public/images/artal_security8.jpeg",
+    "/images/artal_security3.jpg",
+    "/images/artal_security6.jpg",
+    "/images/artal_security7.jpg",
+    "/images/artal_security9.jpg",
+    "/images/artal_security10.jpg",
+    "/images/artal_security12.jpg",
+    "/images/artal_security15.jpg",
+    "/images/artal_security18.jpg",
+    "/images/artal_security21.jpg",
+    "/images/artal_security2.jpg",
+    "/images/artal_security4.jpg",
+    "/images/artal_security5.jpg",
+    "/images/artal_security8.jpg",
   ];
 
   // Auto-change image every 5 seconds

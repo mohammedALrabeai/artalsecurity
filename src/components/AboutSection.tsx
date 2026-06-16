@@ -55,7 +55,7 @@ export function AboutSection() {
             <div className="relative">
               <div className="aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[#EFB621]/20 transition-shadow duration-500">
                 <ImageWithFallback
-                  src="https://artalsecurity.com/public/images/home.webp"
+                  src="/images/home.webp"
                   alt="Artal Office Building"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
