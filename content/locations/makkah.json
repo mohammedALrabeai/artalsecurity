@@ -1,0 +1,14 @@
+{
+  "order": 2,
+  "slug": "makkah",
+  "ar": {
+    "name": "مكة المكرمة",
+    "region": "منطقة مكة المكرمة",
+    "blurb": "مدينة ذات كثافة عالية على مدار العام تتطلب كوادر حراسة مدرّبة للفنادق والمنشآت الكبرى."
+  },
+  "en": {
+    "name": "Makkah",
+    "region": "Makkah Region",
+    "blurb": "A high-density city year-round requiring trained guards for hotels and major facilities."
+  }
+}

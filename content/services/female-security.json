@@ -1,0 +1,51 @@
+{
+  "order": 6,
+  "slug": "female-security",
+  "keywords": "الأمن النسائي, حارسات أمن, محترفات أمن, female security personnel, women security guards",
+  "ar": {
+    "name": "الأمن النسائي",
+    "title": "خدمات الأمن النسائي (حارسات مدرّبات) | أرتال",
+    "description": "توفير محترفات أمن مدرّبات للمنشآت والفعاليات التي تتطلب خدمات أمنية نسائية متخصّصة، مع مراعاة الخصوصية.",
+    "heading": "الأمن النسائي",
+    "intro": "نوفّر محترفات أمن مدرّبات للمنشآت والمناسبات التي تتطلب خدمات أمنية متخصّصة، مثل تفتيش السيدات وتنظيم دخول العائلات في المرافق المختلطة، مع مراعاة الخصوصية والاحترافية.",
+    "features": [
+      "حارسات أمن مدرّبات ومؤهّلات",
+      "تفتيش السيدات وتنظيم دخول العائلات",
+      "مناسبة للمولات والفعاليات والمنشآت المختلطة",
+      "مراعاة الخصوصية والذوق العام"
+    ],
+    "faqs": [
+      {
+        "q": "متى أحتاج خدمة الأمن النسائي؟",
+        "a": "في المرافق المختلطة والفعاليات التي تتطلب تفتيش السيدات أو تنظيم دخول العائلات."
+      },
+      {
+        "q": "هل الكوادر مدرّبة؟",
+        "a": "نعم، محترفات مدرّبات ومؤهّلات وفق إجراءات العمل المعتمدة."
+      }
+    ]
+  },
+  "en": {
+    "name": "Female Security Personnel",
+    "title": "Female Security Personnel (Trained) | Artal",
+    "description": "Trained female security professionals for facilities and events that require specialized female security services, with respect for privacy.",
+    "heading": "Female Security Personnel",
+    "intro": "We provide trained female security professionals for facilities and events requiring specialized services, such as screening women and managing family entry in mixed facilities, with respect for privacy and professionalism.",
+    "features": [
+      "Trained and qualified female guards",
+      "Screening women and managing family entry",
+      "Suitable for malls, events and mixed facilities",
+      "Respect for privacy and decorum"
+    ],
+    "faqs": [
+      {
+        "q": "When do I need female security?",
+        "a": "In mixed facilities and events that require screening women or managing family entry."
+      },
+      {
+        "q": "Are the personnel trained?",
+        "a": "Yes, trained and qualified professionals following approved operating procedures."
+      }
+    ]
+  }
+}

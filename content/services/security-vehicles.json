@@ -1,0 +1,51 @@
+{
+  "order": 3,
+  "slug": "security-vehicles",
+  "keywords": "تأجير سيارات أمنية, مركبات أمنية مجهزة, دوريات أمنية, security vehicles rental, patrol vehicles",
+  "ar": {
+    "name": "تأجير السيارات الأمنية",
+    "title": "تأجير السيارات الأمنية المجهّزة | أرتال",
+    "description": "تأجير سيارات أمنية مجهّزة بالكامل بمعدّات الاتصال وتحديد المواقع والإنارة والأبواق الأمنية، متوفرة بعدة فئات حسب حاجة العميل.",
+    "heading": "تأجير السيارات الأمنية",
+    "intro": "نوفّر سيارات أمنية مجهّزة بكامل المعدّات الأمنية مثل أجهزة الاتصالات وتحديد المواقع والمصابيح والأبواق الأمنية، وهي متوفرة في عدة فئات بحسب حاجة العميل وطبيعة الموقع.",
+    "features": [
+      "مركبات مجهّزة بأجهزة اتصال وتحديد مواقع",
+      "إنارة وأبواق أمنية",
+      "عدة فئات حسب الحاجة",
+      "دعم لعمليات الدوريات والاستجابة"
+    ],
+    "faqs": [
+      {
+        "q": "هل تتوفر فئات مختلفة من المركبات؟",
+        "a": "نعم، تتوفر ثلاث فئات حسب حاجة العميل وطبيعة الموقع."
+      },
+      {
+        "q": "هل المركبات مجهّزة بمعدّات الاتصال؟",
+        "a": "نعم، مجهّزة بأجهزة الاتصالات وتحديد المواقع والمعدّات الأمنية."
+      }
+    ]
+  },
+  "en": {
+    "name": "Security Vehicles Rental",
+    "title": "Equipped Security Vehicles Rental | Artal",
+    "description": "Rental of fully equipped security vehicles with communication, GPS, lighting and security horns, available in several categories based on client needs.",
+    "heading": "Security Vehicles Rental",
+    "intro": "We provide security vehicles fully equipped with security gear such as communication devices, GPS, lights and security horns, available in several categories based on the client’s needs and site nature.",
+    "features": [
+      "Vehicles equipped with communication and GPS devices",
+      "Security lighting and horns",
+      "Several categories based on need",
+      "Support for patrol and response operations"
+    ],
+    "faqs": [
+      {
+        "q": "Are different vehicle categories available?",
+        "a": "Yes, three categories are available based on client needs and site nature."
+      },
+      {
+        "q": "Are the vehicles equipped with communication gear?",
+        "a": "Yes, they are equipped with communication, GPS and security equipment."
+      }
+    ]
+  }
+}

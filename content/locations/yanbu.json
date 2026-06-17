@@ -1,0 +1,14 @@
+{
+  "order": 12,
+  "slug": "yanbu",
+  "ar": {
+    "name": "ينبع",
+    "region": "منطقة المدينة المنورة",
+    "blurb": "مدينة صناعية وميناء مهم على البحر الأحمر، بطلب على حراسة المنشآت الصناعية والمواقع."
+  },
+  "en": {
+    "name": "Yanbu",
+    "region": "Madinah Region",
+    "blurb": "An industrial city and key Red Sea port, with demand for industrial facility and site security."
+  }
+}

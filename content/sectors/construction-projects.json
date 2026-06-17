@@ -1,0 +1,75 @@
+{
+  "order": 2,
+  "slug": "construction-projects",
+  "keywords": "حراسة مواقع إنشائية, أمن المشاريع, حراسة مشاريع المقاولات, حراسة مواقع البناء",
+  "ar": {
+    "name": "المشاريع والإنشاءات",
+    "title": "حراسة المشاريع والمواقع الإنشائية | أرتال للحراسات الأمنية",
+    "description": "شركة أرتال — حراسة أمنية للمواقع الإنشائية والمشاريع الكبرى ومواقع المقاولين في السعودية. حماية المعدّات والمواد وتنظيم الدخول. اطلب عرض سعر.",
+    "heading": "حراسة المشاريع والمواقع الإنشائية",
+    "intro": "تواجه المواقع الإنشائية مخاطر السرقة والتعدّي وفقدان المعدّات والمواد. توفّر أرتال حراسة متخصّصة للمشاريع تشمل تأمين المحيط وتنظيم دخول العمالة والمركبات وحماية المعدّات والمخزون على مدار مراحل المشروع، في جميع مناطق المملكة.",
+    "sites": [
+      "مواقع البناء والإنشاء",
+      "المشاريع الكبرى والبنية التحتية",
+      "مخيمات ومواقع المقاولين",
+      "مستودعات المواد والمعدّات بالموقع",
+      "مشاريع الطرق والمرافق"
+    ],
+    "points": [
+      "تأمين محيط الموقع ومنع التعدّي والسرقة",
+      "تنظيم دخول العمالة والمركبات والمعدّات",
+      "حماية المخزون والمعدّات الثمينة",
+      "دوريات ليلية وتغطية على مدار الساعة",
+      "تقارير حوادث ومتابعة منظّمة مع إدارة المشروع"
+    ],
+    "faqs": [
+      {
+        "q": "هل توفّرون حراسة مؤقتة طوال مدة المشروع فقط؟",
+        "a": "نعم، نوفّر عقود حراسة مرنة تغطّي مدة المشروع بمراحله المختلفة حسب احتياجك."
+      },
+      {
+        "q": "كيف تحمون المعدّات والمواد في الموقع؟",
+        "a": "عبر تأمين المحيط، وتنظيم الدخول، والدوريات، والمراقبة، وتوثيق حركة المعدّات والمواد."
+      },
+      {
+        "q": "هل تغطّون المشاريع في المواقع النائية؟",
+        "a": "نعم، ننسّق توفير الكوادر والإعاشة اللازمة لتأمين المشاريع في المواقع النائية بجميع المناطق."
+      }
+    ]
+  },
+  "en": {
+    "name": "Construction & Projects",
+    "title": "Construction Site & Project Security | Artal Security",
+    "description": "Artal — security guarding for construction sites, mega projects and contractor sites across Saudi Arabia. Protect equipment and materials, control access. Request a quote.",
+    "heading": "Security Guarding for Construction Sites & Projects",
+    "intro": "Construction sites face risks of theft, trespassing and loss of equipment and materials. Artal provides specialized project guarding covering perimeter security, workforce and vehicle access control, and protection of equipment and stock throughout every project phase, across all regions of Saudi Arabia.",
+    "sites": [
+      "Construction and build sites",
+      "Mega projects and infrastructure",
+      "Contractor camps and sites",
+      "On-site material and equipment stores",
+      "Road and utility projects"
+    ],
+    "points": [
+      "Perimeter security and prevention of trespassing and theft",
+      "Workforce, vehicle and equipment access control",
+      "Protection of valuable stock and equipment",
+      "Night patrols and 24/7 coverage",
+      "Incident reporting and organized follow-up with project management"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide temporary guarding for the project duration only?",
+        "a": "Yes, we offer flexible guarding contracts covering the project duration across its phases as you need."
+      },
+      {
+        "q": "How do you protect on-site equipment and materials?",
+        "a": "Through perimeter security, access control, patrols, surveillance and documented tracking of equipment and material movement."
+      },
+      {
+        "q": "Do you cover projects in remote locations?",
+        "a": "Yes — we coordinate personnel and the required logistics to secure projects in remote sites across all regions."
+      }
+    ]
+  }
+}

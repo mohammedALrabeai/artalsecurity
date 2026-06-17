@@ -1,0 +1,14 @@
+{
+  "order": 6,
+  "slug": "jubail",
+  "ar": {
+    "name": "الجبيل",
+    "region": "المنطقة الشرقية",
+    "blurb": "أكبر مدينة صناعية في الشرق الأوسط ومقر أرتال، بخبرة عميقة في تأمين المصانع والمنشآت الصناعية."
+  },
+  "en": {
+    "name": "Jubail",
+    "region": "Eastern Province",
+    "blurb": "The largest industrial city in the Middle East and Artal’s home base, with deep experience securing factories and industrial facilities."
+  }
+}

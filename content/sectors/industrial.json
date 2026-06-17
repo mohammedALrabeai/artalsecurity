@@ -1,0 +1,75 @@
+{
+  "order": 0,
+  "slug": "industrial",
+  "keywords": "حراسات أمنية صناعية, حراسة مصانع, أمن المناطق الصناعية, حراسة مستودعات, شركة أمن صناعي",
+  "ar": {
+    "name": "القطاع الصناعي والمصانع",
+    "title": "حراسة المنشآت الصناعية والمصانع | أرتال للحراسات الأمنية",
+    "description": "شركة أرتال — حلول حراسة أمنية متخصصة للمصانع والمناطق الصناعية والمستودعات في السعودية، بترخيص الهيئة العليا للأمن الصناعي رقم 361. اطلب عرض سعر.",
+    "heading": "حراسة المنشآت الصناعية والمصانع",
+    "intro": "تتطلب المنشآت الصناعية والمصانع مستوى أمنياً عالياً يراعي طبيعة المواد والمعدّات والمخاطر التشغيلية. توفّر شركة أرتال الموحدة للحراسات الأمنية — المرخّصة من الهيئة العليا للأمن الصناعي بوزارة الداخلية (ترخيص رقم 361) — حراساً مدرّبين وأنظمة تحكّم وغرفة عمليات على مدار الساعة لحماية أصولكم الصناعية في جميع مناطق المملكة.",
+    "sites": [
+      "المصانع والمجمّعات الإنتاجية",
+      "المدن والمناطق الصناعية",
+      "المستودعات ومراكز التوزيع",
+      "منشآت البتروكيماويات والمواد الخطرة",
+      "محطات الطاقة والمرافق"
+    ],
+    "points": [
+      "حراس مدرّبون على بروتوكولات السلامة الصناعية وإدارة المخاطر",
+      "تحكّم في الدخول والخروج للمركبات والشاحنات والعمالة",
+      "غرفة عمليات ومراقبة بالكاميرات على مدار الساعة",
+      "التنسيق مع الدفاع المدني والجهات الأمنية عند الطوارئ",
+      "تقارير دورية وإجراءات تفتيش موثّقة"
+    ],
+    "faqs": [
+      {
+        "q": "هل أرتال مرخّصة لحراسة المنشآت الصناعية؟",
+        "a": "نعم، شركة أرتال مرخّصة من الهيئة العليا للأمن الصناعي بوزارة الداخلية برقم 361، وهي مؤهّلة لتأمين المصانع والمنشآت الصناعية والحيوية."
+      },
+      {
+        "q": "هل توفّرون حراسة على مدار الساعة للمصانع؟",
+        "a": "نعم، نوفّر تغطية 24/7 مدعومة بغرفة عمليات مركزية وأنظمة مراقبة وتقارير دورية."
+      },
+      {
+        "q": "في أي مناطق تقدّمون خدمة الحراسة الصناعية؟",
+        "a": "نخدم جميع مناطق المملكة العربية السعودية، وننسّق توفير الكوادر حتى للمواقع الصناعية النائية."
+      }
+    ]
+  },
+  "en": {
+    "name": "Industrial & Factories",
+    "title": "Industrial & Factory Security Guarding | Artal Security",
+    "description": "Artal — specialized security guarding for factories, industrial cities and warehouses across Saudi Arabia. Licensed by the High Authority for Industrial Security (No. 361). Request a quote.",
+    "heading": "Security Guarding for Industrial Facilities & Factories",
+    "intro": "Industrial facilities and factories demand a high security standard that accounts for materials, equipment and operational risk. Artal Unified Security Services — licensed by the Ministry of Interior’s High Authority for Industrial Security (License No. 361) — provides trained guards, access control and a 24/7 operations room to protect your industrial assets across Saudi Arabia.",
+    "sites": [
+      "Factories and production complexes",
+      "Industrial cities and zones",
+      "Warehouses and distribution centers",
+      "Petrochemical and hazardous-material facilities",
+      "Power plants and utilities"
+    ],
+    "points": [
+      "Guards trained in industrial safety protocols and risk management",
+      "Vehicle, truck and workforce access control",
+      "24/7 operations room and CCTV monitoring",
+      "Coordination with Civil Defense and authorities in emergencies",
+      "Documented inspections and periodic reporting"
+    ],
+    "faqs": [
+      {
+        "q": "Is Artal licensed to guard industrial facilities?",
+        "a": "Yes. Artal is licensed by the Ministry of Interior’s High Authority for Industrial Security (No. 361) and is qualified to secure factories, industrial and vital facilities."
+      },
+      {
+        "q": "Do you provide 24/7 guarding for factories?",
+        "a": "Yes — we provide round-the-clock coverage backed by a central operations room, monitoring systems and periodic reporting."
+      },
+      {
+        "q": "Which regions do you cover for industrial security?",
+        "a": "We serve all regions of Saudi Arabia and can mobilize personnel even for remote industrial sites."
+      }
+    ]
+  }
+}

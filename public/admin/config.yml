@@ -46,3 +46,130 @@ collections:
           - { name: description, label: "Meta description (~155 chars)", widget: text }
           - { name: excerpt, label: "Short excerpt", widget: text }
           - { name: body, label: "Body (Markdown)", widget: markdown }
+
+  # ───────── القطاعات ─────────
+  - name: sectors
+    label: "القطاعات / Sectors"
+    label_singular: "قطاع / Sector"
+    folder: "content/sectors"
+    create: true
+    extension: json
+    format: json
+    slug: "{{fields.slug}}"
+    identifier_field: slug
+    summary: "{{fields.ar.name}}"
+    fields:
+      - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
+      - { name: slug, label: "Slug (إنجليزي)", widget: string, pattern: ['^[a-z0-9-]+$', 'أحرف صغيرة وأرقام وشرطات'] }
+      - { name: keywords, label: "كلمات مفتاحية", widget: text }
+      - name: ar
+        label: "المحتوى العربي"
+        widget: object
+        fields:
+          - { name: name, label: "الاسم المختصر", widget: string }
+          - { name: title, label: "عنوان الميتا", widget: string }
+          - { name: description, label: "وصف الميتا", widget: text }
+          - { name: heading, label: "العنوان الرئيسي (H1)", widget: string }
+          - { name: intro, label: "المقدمة", widget: text }
+          - { name: sites, label: "ما نؤمّنه", widget: list }
+          - { name: points, label: "لماذا نحن", widget: list }
+          - name: faqs
+            label: "الأسئلة الشائعة"
+            widget: list
+            fields:
+              - { name: q, label: "سؤال", widget: string }
+              - { name: a, label: "جواب", widget: text }
+      - name: en
+        label: "English content"
+        widget: object
+        fields:
+          - { name: name, label: "Short name", widget: string }
+          - { name: title, label: "Meta title", widget: string }
+          - { name: description, label: "Meta description", widget: text }
+          - { name: heading, label: "Heading (H1)", widget: string }
+          - { name: intro, label: "Intro", widget: text }
+          - { name: sites, label: "What we secure", widget: list }
+          - { name: points, label: "Why us", widget: list }
+          - name: faqs
+            label: "FAQs"
+            widget: list
+            fields:
+              - { name: q, label: "Question", widget: string }
+              - { name: a, label: "Answer", widget: text }
+
+  # ───────── الخدمات ─────────
+  - name: services
+    label: "الخدمات / Services"
+    label_singular: "خدمة / Service"
+    folder: "content/services"
+    create: true
+    extension: json
+    format: json
+    slug: "{{fields.slug}}"
+    identifier_field: slug
+    summary: "{{fields.ar.name}}"
+    fields:
+      - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
+      - { name: slug, label: "Slug (إنجليزي)", widget: string, pattern: ['^[a-z0-9-]+$', 'أحرف صغيرة وأرقام وشرطات'] }
+      - { name: keywords, label: "كلمات مفتاحية", widget: text }
+      - name: ar
+        label: "المحتوى العربي"
+        widget: object
+        fields:
+          - { name: name, label: "الاسم", widget: string }
+          - { name: title, label: "عنوان الميتا", widget: string }
+          - { name: description, label: "وصف الميتا", widget: text }
+          - { name: heading, label: "العنوان الرئيسي (H1)", widget: string }
+          - { name: intro, label: "المقدمة", widget: text }
+          - { name: features, label: "ماذا تشمل الخدمة", widget: list }
+          - name: faqs
+            label: "الأسئلة الشائعة"
+            widget: list
+            fields:
+              - { name: q, label: "سؤال", widget: string }
+              - { name: a, label: "جواب", widget: text }
+      - name: en
+        label: "English content"
+        widget: object
+        fields:
+          - { name: name, label: "Name", widget: string }
+          - { name: title, label: "Meta title", widget: string }
+          - { name: description, label: "Meta description", widget: text }
+          - { name: heading, label: "Heading (H1)", widget: string }
+          - { name: intro, label: "Intro", widget: text }
+          - { name: features, label: "What the service includes", widget: list }
+          - name: faqs
+            label: "FAQs"
+            widget: list
+            fields:
+              - { name: q, label: "Question", widget: string }
+              - { name: a, label: "Answer", widget: text }
+
+  # ───────── المدن ─────────
+  - name: locations
+    label: "المدن / Locations"
+    label_singular: "مدينة / City"
+    folder: "content/locations"
+    create: true
+    extension: json
+    format: json
+    slug: "{{fields.slug}}"
+    identifier_field: slug
+    summary: "{{fields.ar.name}}"
+    fields:
+      - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
+      - { name: slug, label: "Slug (إنجليزي)", widget: string, pattern: ['^[a-z0-9-]+$', 'أحرف صغيرة وأرقام وشرطات'] }
+      - name: ar
+        label: "المحتوى العربي"
+        widget: object
+        fields:
+          - { name: name, label: "اسم المدينة", widget: string }
+          - { name: region, label: "المنطقة", widget: string }
+          - { name: blurb, label: "وصف تعريفي", widget: text }
+      - name: en
+        label: "English content"
+        widget: object
+        fields:
+          - { name: name, label: "City name", widget: string }
+          - { name: region, label: "Region", widget: string }
+          - { name: blurb, label: "Blurb", widget: text }

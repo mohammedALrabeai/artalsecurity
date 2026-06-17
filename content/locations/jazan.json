@@ -1,0 +1,14 @@
+{
+  "order": 13,
+  "slug": "jazan",
+  "ar": {
+    "name": "جازان",
+    "region": "منطقة جازان",
+    "blurb": "منطقة ساحلية واعدة بمشاريع كبرى، تتطلب كوادر لحراسة الموانئ والمنشآت الصناعية."
+  },
+  "en": {
+    "name": "Jazan",
+    "region": "Jazan Region",
+    "blurb": "A promising coastal region with mega projects, requiring port and industrial facility security."
+  }
+}

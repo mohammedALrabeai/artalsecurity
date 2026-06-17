@@ -1,0 +1,51 @@
+{
+  "order": 4,
+  "slug": "vehicle-tracking",
+  "keywords": "تتبع المركبات, أنظمة تتبع, GPS, إدارة العمليات الأمنية, vehicle tracking",
+  "ar": {
+    "name": "تتبع المركبات",
+    "title": "أنظمة تتبع المركبات وإدارة العمليات | أرتال",
+    "description": "أجهزة وبرامج تتبع المركبات وأنظمة إدارة العمليات الأمنية الشاملة لمتابعة الأسطول والدوريات لحظياً.",
+    "heading": "تتبع المركبات",
+    "intro": "نوفّر أجهزة تتبع المركبات وبرامج التتبع وأنظمة إدارة العمليات الأمنية الشاملة، بما يتيح متابعة الأسطول والدوريات لحظياً ورفع كفاءة الاستجابة.",
+    "features": [
+      "أجهزة تتبع GPS للمركبات والدوريات",
+      "برامج متابعة وإدارة العمليات",
+      "تقارير ومؤشرات أداء",
+      "تكامل مع غرفة العمليات"
+    ],
+    "faqs": [
+      {
+        "q": "هل يمكن متابعة الدوريات لحظياً؟",
+        "a": "نعم، توفّر الأنظمة متابعة لحظية للمركبات والدوريات."
+      },
+      {
+        "q": "هل تتوفر تقارير أداء؟",
+        "a": "نعم، تتيح المنصّة تقارير ومؤشرات لقياس الأداء."
+      }
+    ]
+  },
+  "en": {
+    "name": "Vehicle Tracking",
+    "title": "Vehicle Tracking & Operations Management | Artal",
+    "description": "Vehicle tracking devices and software with comprehensive security operations management to monitor fleets and patrols in real time.",
+    "heading": "Vehicle Tracking",
+    "intro": "We provide vehicle tracking devices, tracking software and comprehensive security operations management systems, enabling real-time fleet and patrol monitoring and improved response efficiency.",
+    "features": [
+      "GPS tracking devices for vehicles and patrols",
+      "Operations monitoring and management software",
+      "Reports and performance indicators",
+      "Integration with the operations room"
+    ],
+    "faqs": [
+      {
+        "q": "Can patrols be tracked in real time?",
+        "a": "Yes, the systems provide real-time tracking of vehicles and patrols."
+      },
+      {
+        "q": "Are performance reports available?",
+        "a": "Yes, the platform provides reports and indicators to measure performance."
+      }
+    ]
+  }
+}

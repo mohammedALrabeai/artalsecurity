@@ -1,0 +1,51 @@
+{
+  "order": 2,
+  "slug": "fire-safety-systems",
+  "keywords": "أنظمة السلامة, أنظمة الإطفاء, إنذار الحريق, fire safety, fire alarm systems",
+  "ar": {
+    "name": "أنظمة السلامة والإطفاء",
+    "title": "أنظمة السلامة والإطفاء وإنذار الحريق | أرتال",
+    "description": "قسم متخصّص في أنظمة السلامة والإطفاء وإنذار الحريق: توريد وتركيب وصيانة وفق المعايير المعتمدة لحماية منشأتك.",
+    "heading": "أنظمة السلامة والإطفاء",
+    "intro": "قسم متخصّص يعمل في أنظمة السلامة وأنظمة الإطفاء وإنذار الحريق — توريداً وتركيباً وصيانة — وفق المعايير المعتمدة، بما يتكامل مع منظومة الأمن والحماية في المنشأة.",
+    "features": [
+      "أنظمة إنذار وكشف الحريق",
+      "أنظمة الإطفاء ومعدّات السلامة",
+      "توريد وتركيب وصيانة دورية",
+      "تكامل مع غرفة العمليات والإجراءات الأمنية"
+    ],
+    "faqs": [
+      {
+        "q": "هل تشمل الخدمة الصيانة الدورية؟",
+        "a": "نعم، نوفّر عقود صيانة دورية لضمان جاهزية أنظمة السلامة والإطفاء."
+      },
+      {
+        "q": "هل تتوافق الأنظمة مع المعايير المعتمدة؟",
+        "a": "نعم، نلتزم بالمعايير والاشتراطات المعتمدة في المملكة."
+      }
+    ]
+  },
+  "en": {
+    "name": "Fire & Safety Systems",
+    "title": "Fire & Safety and Alarm Systems | Artal",
+    "description": "A specialized department for safety, firefighting and fire alarm systems: supply, installation and maintenance to approved standards to protect your facility.",
+    "heading": "Fire & Safety Systems",
+    "intro": "A specialized department working in safety systems, firefighting systems and fire alarms — supply, installation and maintenance — to approved standards, integrated with the facility’s overall security and protection system.",
+    "features": [
+      "Fire alarm and detection systems",
+      "Firefighting systems and safety equipment",
+      "Supply, installation and periodic maintenance",
+      "Integration with the operations room and security procedures"
+    ],
+    "faqs": [
+      {
+        "q": "Does the service include periodic maintenance?",
+        "a": "Yes, we provide periodic maintenance contracts to keep safety and firefighting systems ready."
+      },
+      {
+        "q": "Do the systems comply with approved standards?",
+        "a": "Yes, we adhere to approved standards and requirements in the Kingdom."
+      }
+    ]
+  }
+}

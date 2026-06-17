@@ -1,0 +1,14 @@
+{
+  "order": 5,
+  "slug": "khobar",
+  "ar": {
+    "name": "الخبر",
+    "region": "المنطقة الشرقية",
+    "blurb": "مدينة تجارية حيوية على الخليج، بفرص لحراسة المولات والأبراج والمجمعات السكنية."
+  },
+  "en": {
+    "name": "Khobar",
+    "region": "Eastern Province",
+    "blurb": "A vibrant commercial city on the Gulf, with demand for mall, tower and residential security."
+  }
+}

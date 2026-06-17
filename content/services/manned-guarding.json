@@ -1,0 +1,53 @@
+{
+  "order": 0,
+  "slug": "manned-guarding",
+  "keywords": "حراسات أمنية مدنية, حراس أمن, حراسة مسلحة, حراسة غير مسلحة, أفراد أمن مدربون, manned guarding, security guards",
+  "ar": {
+    "name": "الحراسات الأمنية المدنية",
+    "title": "الحراسات الأمنية المدنية (حراس أمن) | أرتال",
+    "description": "خدمة الحراسات الأمنية المدنية من أرتال: أفراد أمن مدرّبون ومرخّصون (مسلحون وغير مسلحين) لتأمين منشأتك على مدار الساعة في جميع مناطق المملكة.",
+    "heading": "الحراسات الأمنية المدنية",
+    "intro": "الخدمة الأساسية لشركة أرتال: توفير أفراد أمن مدرّبين ومؤهّلين — مسلحين وغير مسلحين — لتأمين المنشآت الصناعية والتجارية والسكنية والحكومية. كوادرنا مرخّصة وفق ترخيص الهيئة العليا للأمن الصناعي رقم 361، ومدعومة بغرفة عمليات تعمل على مدار الساعة.",
+    "features": [
+      "أفراد أمن مدرّبون على إجراءات التشغيل والطوارئ",
+      "خيارات الحراسة المسلحة وغير المسلحة حسب طبيعة الموقع",
+      "إشراف ميداني وتقارير مناوبة دورية",
+      "غرفة عمليات ومتابعة على مدار الساعة",
+      "كوادر نسائية عند الحاجة لتفتيش السيدات"
+    ],
+    "faqs": [
+      {
+        "q": "هل توفّرون حراسة مسلحة وغير مسلحة؟",
+        "a": "نعم، نوفّر النوعين وفق طبيعة الموقع ومتطلباته والأنظمة المعتمدة."
+      },
+      {
+        "q": "هل الحرّاس مرخّصون ومدرّبون؟",
+        "a": "نعم، كوادرنا مؤهّلة ومدرّبة، وتعمل الشركة بترخيص الهيئة العليا للأمن الصناعي رقم 361."
+      }
+    ]
+  },
+  "en": {
+    "name": "Manned Security Guarding",
+    "title": "Manned Security Guarding (Guards) | Artal",
+    "description": "Artal's core service: trained, licensed security guards (armed and unarmed) protecting your facility 24/7 across all regions of Saudi Arabia.",
+    "heading": "Manned Security Guarding",
+    "intro": "Artal's core service: trained, qualified security personnel — armed and unarmed — to protect industrial, commercial, residential and government facilities. Our guards operate under High Authority for Industrial Security License No. 361, backed by a 24/7 operations room.",
+    "features": [
+      "Guards trained in standard operating and emergency procedures",
+      "Armed and unarmed options based on site requirements",
+      "Field supervision and periodic shift reporting",
+      "24/7 operations room and monitoring",
+      "Female personnel available when required"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide armed and unarmed guarding?",
+        "a": "Yes, we provide both based on the site’s nature, requirements, and applicable regulations."
+      },
+      {
+        "q": "Are the guards licensed and trained?",
+        "a": "Yes, our personnel are qualified and trained, and the company operates under High Authority for Industrial Security License No. 361."
+      }
+    ]
+  }
+}

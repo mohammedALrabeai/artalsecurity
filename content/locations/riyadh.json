@@ -1,0 +1,14 @@
+{
+  "order": 0,
+  "slug": "riyadh",
+  "ar": {
+    "name": "الرياض",
+    "region": "منطقة الرياض",
+    "blurb": "العاصمة وأكبر مركز تجاري وحكومي وصناعي في المملكة، بطلب عالٍ على حراسة المنشآت والأبراج والمجمعات."
+  },
+  "en": {
+    "name": "Riyadh",
+    "region": "Riyadh Region",
+    "blurb": "The capital and largest commercial, government and industrial hub, with high demand for facility, tower and complex security."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "order": 11,
+  "slug": "buraidah",
+  "ar": {
+    "name": "بريدة",
+    "region": "منطقة القصيم",
+    "blurb": "حاضرة القصيم التجارية والزراعية، بفرص لحراسة الأسواق والمستودعات والمنشآت."
+  },
+  "en": {
+    "name": "Buraidah",
+    "region": "Qassim Region",
+    "blurb": "Qassim’s commercial and agricultural hub, with demand for market, warehouse and facility security."
+  }
+}

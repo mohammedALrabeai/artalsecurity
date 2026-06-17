@@ -1,0 +1,51 @@
+{
+  "order": 8,
+  "slug": "government-relations",
+  "keywords": "العلاقات الحكومية, التنسيق الأمني, الجهات الأمنية, government relations, security coordination",
+  "ar": {
+    "name": "العلاقات الحكومية",
+    "title": "العلاقات الحكومية والتنسيق الأمني | أرتال",
+    "description": "تحمّل المسؤولية الكاملة عن العلاقات الحكومية في المجال الأمني والتنسيق مع الجهات الأمنية المختصّة نيابة عن المنشأة.",
+    "heading": "العلاقات الحكومية",
+    "intro": "نتحمّل المسؤولية الكاملة عن العلاقات الحكومية في المجال الأمني، والتنسيق مع الجهات الأمنية المختصّة، بما يوفّر على المنشأة عناء المتابعة ويضمن الامتثال للإجراءات الرسمية.",
+    "features": [
+      "التنسيق مع الجهات الأمنية المختصّة",
+      "متابعة الإجراءات والمتطلبات الرسمية",
+      "دعم الامتثال النظامي",
+      "تخفيف العبء الإداري عن المنشأة"
+    ],
+    "faqs": [
+      {
+        "q": "ماذا تشمل خدمة العلاقات الحكومية؟",
+        "a": "التنسيق مع الجهات الأمنية ومتابعة الإجراءات الرسمية المتعلقة بالمجال الأمني."
+      },
+      {
+        "q": "هل تساعد في الامتثال النظامي؟",
+        "a": "نعم، نساعد المنشأة على الالتزام بالإجراءات والمتطلبات المعتمدة."
+      }
+    ]
+  },
+  "en": {
+    "name": "Government Relations",
+    "title": "Government Relations & Security Liaison | Artal",
+    "description": "Taking full responsibility for government relations in the security field and coordinating with the relevant security authorities on the facility’s behalf.",
+    "heading": "Government Relations",
+    "intro": "We take full responsibility for government relations in the security field and coordinate with the relevant security authorities, sparing the facility the follow-up burden and ensuring compliance with official procedures.",
+    "features": [
+      "Coordination with the relevant security authorities",
+      "Follow-up on official procedures and requirements",
+      "Support for regulatory compliance",
+      "Reducing the administrative burden on the facility"
+    ],
+    "faqs": [
+      {
+        "q": "What does government relations include?",
+        "a": "Coordination with security authorities and follow-up on official procedures related to the security field."
+      },
+      {
+        "q": "Does it help with regulatory compliance?",
+        "a": "Yes, we help the facility adhere to approved procedures and requirements."
+      }
+    ]
+  }
+}

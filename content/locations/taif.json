@@ -1,0 +1,14 @@
+{
+  "order": 8,
+  "slug": "taif",
+  "ar": {
+    "name": "الطائف",
+    "region": "منطقة مكة المكرمة",
+    "blurb": "مدينة المصايف، بطلب على حراسة المنتجعات والمجمعات السياحية والسكنية."
+  },
+  "en": {
+    "name": "Taif",
+    "region": "Makkah Region",
+    "blurb": "A resort city with demand for guarding resorts, tourist and residential complexes."
+  }
+}

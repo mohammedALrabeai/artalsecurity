@@ -1,0 +1,14 @@
+{
+  "order": 4,
+  "slug": "dammam",
+  "ar": {
+    "name": "الدمام",
+    "region": "المنطقة الشرقية",
+    "blurb": "قلب المنطقة الشرقية الصناعي، بطلب متواصل على حراسة المنشآت النفطية والصناعية والتجارية."
+  },
+  "en": {
+    "name": "Dammam",
+    "region": "Eastern Province",
+    "blurb": "The industrial heart of the Eastern Province, with steady demand for oil, industrial and commercial security."
+  }
+}

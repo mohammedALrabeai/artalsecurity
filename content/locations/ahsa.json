@@ -1,0 +1,14 @@
+{
+  "order": 7,
+  "slug": "ahsa",
+  "ar": {
+    "name": "الأحساء",
+    "region": "المنطقة الشرقية",
+    "blurb": "من أكبر محافظات المملكة، بفرص لحراسة المنشآت الزراعية والتجارية والحكومية."
+  },
+  "en": {
+    "name": "Al-Ahsa",
+    "region": "Eastern Province",
+    "blurb": "One of the Kingdom’s largest governorates, with demand for agricultural, commercial and government security."
+  }
+}

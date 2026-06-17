@@ -1,0 +1,14 @@
+{
+  "order": 3,
+  "slug": "madinah",
+  "ar": {
+    "name": "المدينة المنورة",
+    "region": "منطقة المدينة المنورة",
+    "blurb": "وجهة دائمة الحركة تحتاج حراسة للفنادق والمجمعات السكنية والمنشآت الخدمية."
+  },
+  "en": {
+    "name": "Madinah",
+    "region": "Madinah Region",
+    "blurb": "A constantly busy destination needing guarding for hotels, residential complexes and service facilities."
+  }
+}

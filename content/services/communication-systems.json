@@ -1,0 +1,51 @@
+{
+  "order": 5,
+  "slug": "communication-systems",
+  "keywords": "أنظمة اتصالات, أجهزة لاسلكي, اتصالات أمنية, communication systems, two-way radio",
+  "ar": {
+    "name": "أنظمة الاتصالات",
+    "title": "أنظمة الاتصالات اللاسلكية الأمنية | أرتال",
+    "description": "توفير أجهزة الاتصالات اللاسلكية وملحقاتها وأنظمة التشغيل المتقدمة لتنسيق سلس بين فرق الأمن.",
+    "heading": "أنظمة الاتصالات",
+    "intro": "نوفّر أجهزة الاتصالات اللاسلكية وملحقاتها وأنظمة التشغيل المتقدمة، بما يضمن تنسيقاً سلساً وفورياً بين فرق الأمن وغرفة العمليات في الموقع.",
+    "features": [
+      "أجهزة لاسلكي وملحقاتها",
+      "أنظمة تشغيل متقدمة",
+      "تنسيق فوري بين الفرق",
+      "تكامل مع غرفة العمليات"
+    ],
+    "faqs": [
+      {
+        "q": "هل توفّرون الأجهزة والملحقات؟",
+        "a": "نعم، نوفّر الأجهزة اللاسلكية وملحقاتها وأنظمة التشغيل."
+      },
+      {
+        "q": "هل تتكامل مع غرفة العمليات؟",
+        "a": "نعم، تتكامل لتنسيق الاتصال بين الفرق والغرفة المركزية."
+      }
+    ]
+  },
+  "en": {
+    "name": "Communication Systems",
+    "title": "Wireless Security Communication Systems | Artal",
+    "description": "Wireless communication devices, accessories and advanced operating systems for seamless coordination between security teams.",
+    "heading": "Communication Systems",
+    "intro": "We provide wireless communication devices, their accessories and advanced operating systems, ensuring seamless, instant coordination between security teams and the on-site operations room.",
+    "features": [
+      "Two-way radios and accessories",
+      "Advanced operating systems",
+      "Instant coordination between teams",
+      "Integration with the operations room"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide devices and accessories?",
+        "a": "Yes, we provide wireless devices, accessories and operating systems."
+      },
+      {
+        "q": "Do they integrate with the operations room?",
+        "a": "Yes, they integrate to coordinate communication between teams and the central room."
+      }
+    ]
+  }
+}

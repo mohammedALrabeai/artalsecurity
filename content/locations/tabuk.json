@@ -1,0 +1,14 @@
+{
+  "order": 9,
+  "slug": "tabuk",
+  "ar": {
+    "name": "تبوك",
+    "region": "منطقة تبوك",
+    "blurb": "بوابة الشمال الغربي ومنطقة المشاريع الكبرى، بفرص متنامية لحراسة المواقع والمشاريع."
+  },
+  "en": {
+    "name": "Tabuk",
+    "region": "Tabuk Region",
+    "blurb": "The northwestern gateway and mega-project zone, with growing demand for site and project security."
+  }
+}

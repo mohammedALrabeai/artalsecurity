@@ -1,0 +1,75 @@
+{
+  "order": 1,
+  "slug": "commercial-residential",
+  "keywords": "حراسات أمنية للمولات, أمن سكني, حراسة مجمعات تجارية, حراسة كمباوندات, حراسة أبراج",
+  "ar": {
+    "name": "القطاع التجاري والسكني",
+    "title": "حراسة المجمعات التجارية والسكنية | أرتال للحراسات الأمنية",
+    "description": "شركة أرتال — حراسة أمنية للمولات والمجمعات التجارية والأبراج والكمباوندات السكنية في السعودية. حراس محترفون وخدمة عملاء راقية. اطلب عرض سعر.",
+    "heading": "حراسة المجمعات التجارية والسكنية",
+    "intro": "يجمع القطاع التجاري والسكني بين الحاجة للأمن والحفاظ على تجربة راقية للزوّار والسكّان. توفّر أرتال حراساً يتمتّعون بالمظهر اللائق وحسن التعامل، مع أنظمة تحكّم بالدخول ومراقبة، لتأمين المولات والأبراج والكمباوندات دون الإخلال براحة المرتادين.",
+    "sites": [
+      "المولات والمراكز التجارية",
+      "الأبراج والمكاتب الإدارية",
+      "المجمعات والكمباوندات السكنية",
+      "الأحياء والمخططات السكنية المغلقة",
+      "الفنادق والشقق الفندقية"
+    ],
+    "points": [
+      "حراس بمظهر لائق ومهارات تعامل مع الجمهور",
+      "تنظيم الدخول والمواقف وإدارة الزوّار",
+      "مراقبة بالكاميرات وتحكّم في البوابات",
+      "استجابة سريعة للحوادث والطوارئ",
+      "تكامل مع إدارة المرافق وخدمات الأمن النسائي عند الحاجة"
+    ],
+    "faqs": [
+      {
+        "q": "هل توفّرون حراسة نسائية للمجمعات؟",
+        "a": "نعم، نوفّر محترفات أمن مدرّبات للمنشآت والمناسبات التي تتطلب ذلك."
+      },
+      {
+        "q": "هل تناسب خدمتكم الكمباوندات السكنية والأبراج؟",
+        "a": "نعم، لدينا برامج حراسة مخصّصة للمجمعات السكنية والأبراج تشمل تنظيم الدخول والمواقف والمراقبة."
+      },
+      {
+        "q": "كيف أطلب عرض سعر لتأمين مجمّع تجاري؟",
+        "a": "تواصل معنا عبر الموقع أو الهاتف، وسيقوم فريقنا بزيارة الموقع وتقديم عرض مخصّص حسب احتياجك."
+      }
+    ]
+  },
+  "en": {
+    "name": "Commercial & Residential",
+    "title": "Commercial & Residential Security Guarding | Artal Security",
+    "description": "Artal — security guarding for malls, commercial complexes, towers and residential compounds across Saudi Arabia. Professional guards and premium service. Request a quote.",
+    "heading": "Security Guarding for Commercial & Residential Properties",
+    "intro": "Commercial and residential properties need security that also preserves a premium experience for visitors and residents. Artal provides well-presented, customer-oriented guards together with access control and monitoring to secure malls, towers and compounds without disrupting the comfort of occupants.",
+    "sites": [
+      "Malls and shopping centers",
+      "Towers and office buildings",
+      "Residential complexes and compounds",
+      "Gated communities",
+      "Hotels and serviced apartments"
+    ],
+    "points": [
+      "Well-presented guards with strong public-handling skills",
+      "Entry, parking and visitor management",
+      "CCTV monitoring and gate control",
+      "Rapid incident and emergency response",
+      "Integration with facility management and female security when required"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide female security guards for complexes?",
+        "a": "Yes, we provide trained female security professionals for facilities and events that require them."
+      },
+      {
+        "q": "Is your service suitable for residential compounds and towers?",
+        "a": "Yes — we have dedicated guarding programs for residential complexes and towers covering access, parking and surveillance."
+      },
+      {
+        "q": "How do I request a quote to secure a commercial complex?",
+        "a": "Contact us via the website or phone; our team will survey the site and provide a tailored proposal for your needs."
+      }
+    ]
+  }
+}

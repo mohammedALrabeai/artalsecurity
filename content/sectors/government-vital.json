@@ -1,0 +1,75 @@
+{
+  "order": 3,
+  "slug": "government-vital",
+  "keywords": "حراسة منشآت حكومية, أمن المنشآت النفطية, حراسة مستشفيات, حراسة منشآت تعليمية, أمن المنشآت الحيوية",
+  "ar": {
+    "name": "القطاع الحكومي والحيوي",
+    "title": "حراسة المنشآت الحكومية والحيوية | أرتال للحراسات الأمنية",
+    "description": "شركة أرتال — حراسة أمنية للمنشآت الحكومية والنفطية والصحية والتعليمية في السعودية، بترخيص الهيئة العليا للأمن الصناعي رقم 361. اطلب عرض سعر.",
+    "heading": "حراسة المنشآت الحكومية والحيوية",
+    "intro": "تتطلب المنشآت الحكومية والحيوية انضباطاً عالياً والتزاماً صارماً بالأنظمة والإجراءات الأمنية. توفّر أرتال — بخبرتها وترخيصها رقم 361 — كوادر مؤهّلة لتأمين الجهات الحكومية والمنشآت النفطية والصحية والتعليمية مع التنسيق الكامل مع الجهات الأمنية المختصّة.",
+    "sites": [
+      "الجهات والمباني الحكومية",
+      "المنشآت النفطية ومنشآت الطاقة",
+      "المستشفيات والمنشآت الصحية",
+      "المدارس والجامعات والمنشآت التعليمية",
+      "المنشآت الحيوية والبنية التحتية الحسّاسة"
+    ],
+    "points": [
+      "كوادر منضبطة ملتزمة بالأنظمة والإجراءات الرسمية",
+      "تحكّم صارم في الدخول والتفتيش وإدارة الهوية",
+      "تنسيق كامل مع الجهات الأمنية المختصّة",
+      "غرفة عمليات ومراقبة على مدار الساعة",
+      "سرية وموثوقية عالية في التعامل مع المواقع الحسّاسة"
+    ],
+    "faqs": [
+      {
+        "q": "هل أنتم مؤهّلون لتأمين الجهات الحكومية والمنشآت الحيوية؟",
+        "a": "نعم، أرتال مرخّصة من الهيئة العليا للأمن الصناعي رقم 361 ولديها خبرة في تأمين المنشآت الحكومية والحيوية الحسّاسة."
+      },
+      {
+        "q": "هل توفّرون حراسة للمستشفيات والمنشآت التعليمية؟",
+        "a": "نعم، نوفّر برامج حراسة مخصّصة للمستشفيات والمدارس والجامعات تراعي طبيعة كل منشأة."
+      },
+      {
+        "q": "كيف تضمنون السرية في المواقع الحسّاسة؟",
+        "a": "عبر كوادر مدرّبة وإجراءات صارمة واتفاقيات سرية والتزام كامل بالأنظمة الأمنية المعتمدة."
+      }
+    ]
+  },
+  "en": {
+    "name": "Government & Vital",
+    "title": "Government & Vital Facility Security | Artal Security",
+    "description": "Artal — security guarding for government, oil & energy, healthcare and education facilities in Saudi Arabia. Licensed (No. 361) by the High Authority for Industrial Security. Request a quote.",
+    "heading": "Security Guarding for Government & Vital Facilities",
+    "intro": "Government and vital facilities require high discipline and strict compliance with security regulations and procedures. With its experience and License No. 361, Artal provides qualified personnel to secure government entities, oil, healthcare and education facilities, in full coordination with the relevant authorities.",
+    "sites": [
+      "Government entities and buildings",
+      "Oil and energy facilities",
+      "Hospitals and healthcare facilities",
+      "Schools, universities and education facilities",
+      "Vital facilities and sensitive infrastructure"
+    ],
+    "points": [
+      "Disciplined personnel compliant with official regulations and procedures",
+      "Strict access control, screening and identity management",
+      "Full coordination with relevant authorities",
+      "24/7 operations room and monitoring",
+      "High confidentiality and reliability at sensitive sites"
+    ],
+    "faqs": [
+      {
+        "q": "Are you qualified to secure government and vital facilities?",
+        "a": "Yes. Artal is licensed by the High Authority for Industrial Security (No. 361) and has experience securing sensitive government and vital facilities."
+      },
+      {
+        "q": "Do you provide guarding for hospitals and education facilities?",
+        "a": "Yes, we offer dedicated guarding programs for hospitals, schools and universities tailored to each facility."
+      },
+      {
+        "q": "How do you ensure confidentiality at sensitive sites?",
+        "a": "Through trained personnel, strict procedures, confidentiality agreements and full compliance with approved security regulations."
+      }
+    ]
+  }
+}

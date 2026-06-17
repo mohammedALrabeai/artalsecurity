@@ -1,0 +1,14 @@
+{
+  "order": 1,
+  "slug": "jeddah",
+  "ar": {
+    "name": "جدة",
+    "region": "منطقة مكة المكرمة",
+    "blurb": "الميناء التجاري الأهم على البحر الأحمر، بفرص واسعة لحراسة الموانئ والمولات والمستودعات."
+  },
+  "en": {
+    "name": "Jeddah",
+    "region": "Makkah Region",
+    "blurb": "The key Red Sea commercial port, with broad demand for port, mall and warehouse security."
+  }
+}

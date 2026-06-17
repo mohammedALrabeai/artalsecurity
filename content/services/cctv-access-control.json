@@ -1,0 +1,51 @@
+{
+  "order": 1,
+  "slug": "cctv-access-control",
+  "keywords": "كاميرات مراقبة, أنظمة التحكم في الدخول, CCTV, access control, مراقبة وتحكم",
+  "ar": {
+    "name": "كاميرات المراقبة والتحكم في الدخول",
+    "title": "كاميرات المراقبة وأنظمة التحكم في الدخول | أرتال",
+    "description": "توريد وتركيب وصيانة أنظمة كاميرات المراقبة (CCTV) والتحكم في الدخول والخروج وإدارة المرافق، مع ربطها بالمراقبة المركزية على مدار الساعة.",
+    "heading": "كاميرات المراقبة وأنظمة التحكم في الدخول",
+    "intro": "حلول مراقبة وتحكم متكاملة: توريد وتركيب وصيانة أنظمة الكاميرات وأنظمة التحكم في الدخول والخروج وإدارة المرافق، مع ربطها بغرفة العمليات للمراقبة الحية والاستجابة الفورية.",
+    "features": [
+      "كاميرات مراقبة عالية الدقة وتغطية شاملة",
+      "أنظمة تحكم في الدخول والخروج وإدارة الهوية",
+      "ربط بالمراقبة المركزية على مدار الساعة",
+      "توريد وتركيب وصيانة وعقود دعم"
+    ],
+    "faqs": [
+      {
+        "q": "هل تقدّمون الصيانة بعد التركيب؟",
+        "a": "نعم، نوفّر عقود صيانة ودعم دورية لضمان عمل الأنظمة بكفاءة."
+      },
+      {
+        "q": "هل يمكن ربط الكاميرات بغرفة العمليات؟",
+        "a": "نعم، نربط الأنظمة بالمراقبة المركزية لرصد الأحداث والاستجابة الفورية."
+      }
+    ]
+  },
+  "en": {
+    "name": "CCTV & Access Control",
+    "title": "CCTV Surveillance & Access Control Systems | Artal",
+    "description": "Supply, installation and maintenance of CCTV surveillance and access control systems, integrated with 24/7 central monitoring.",
+    "heading": "CCTV Surveillance & Access Control",
+    "intro": "Integrated surveillance and control solutions: supply, installation and maintenance of CCTV and entry/exit access control and facility management systems, integrated with the operations room for live monitoring and instant response.",
+    "features": [
+      "High-resolution cameras with comprehensive coverage",
+      "Entry/exit access control and identity management",
+      "Integration with 24/7 central monitoring",
+      "Supply, installation, maintenance and support contracts"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide maintenance after installation?",
+        "a": "Yes, we offer periodic maintenance and support contracts to keep systems running efficiently."
+      },
+      {
+        "q": "Can cameras be linked to the operations room?",
+        "a": "Yes, we integrate systems with central monitoring for event detection and instant response."
+      }
+    ]
+  }
+}

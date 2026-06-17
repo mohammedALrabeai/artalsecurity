@@ -1,0 +1,14 @@
+{
+  "order": 10,
+  "slug": "abha",
+  "ar": {
+    "name": "أبها",
+    "region": "منطقة عسير",
+    "blurb": "وجهة الجنوب السياحية، بحاجة لحراسة المنتجعات والفنادق والوجهات السياحية."
+  },
+  "en": {
+    "name": "Abha",
+    "region": "Asir Region",
+    "blurb": "The southern tourist destination, needing guarding for resorts, hotels and attractions."
+  }
+}

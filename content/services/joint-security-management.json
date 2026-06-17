@@ -1,0 +1,51 @@
+{
+  "order": 7,
+  "slug": "joint-security-management",
+  "keywords": "الإدارة الأمنية المشتركة, استشارات أمنية, حلول أمنية, joint security management, security consulting",
+  "ar": {
+    "name": "الإدارة الأمنية المشتركة",
+    "title": "الإدارة الأمنية المشتركة وحلول الدعم | أرتال",
+    "description": "دعم الحلول الأمنية وإدارة أمنية مشتركة مع العميل لتعزيز الحماية ورفع كفاءة المنظومة الأمنية للمنشأة.",
+    "heading": "الإدارة الأمنية المشتركة",
+    "intro": "نقدّم خدمة دعم الحلول الأمنية عبر الإدارة الأمنية المشتركة مع العميل، بما يعزّز الحماية ويرفع كفاءة المنظومة الأمنية ويضمن تكامل الإجراءات مع أهداف المنشأة.",
+    "features": [
+      "دعم وإدارة أمنية مشتركة مع العميل",
+      "تحسين الإجراءات ورفع الكفاءة",
+      "تكامل العنصر البشري والتقني",
+      "متابعة وتقارير دورية"
+    ],
+    "faqs": [
+      {
+        "q": "ما المقصود بالإدارة الأمنية المشتركة؟",
+        "a": "تعاون أرتال مع فريق العميل لإدارة المنظومة الأمنية ورفع كفاءتها بشكل مشترك."
+      },
+      {
+        "q": "هل تشمل تحسين الإجراءات الحالية؟",
+        "a": "نعم، نراجع الإجراءات ونطوّرها لرفع مستوى الحماية."
+      }
+    ]
+  },
+  "en": {
+    "name": "Joint Security Management",
+    "title": "Joint Security Management & Support | Artal",
+    "description": "Security solutions support and joint security management with the client to enhance protection and improve the facility’s security system.",
+    "heading": "Joint Security Management",
+    "intro": "We provide security solutions support through joint security management with the client, enhancing protection, improving the efficiency of the security system, and ensuring procedures align with the facility’s objectives.",
+    "features": [
+      "Joint security support and management with the client",
+      "Improving procedures and raising efficiency",
+      "Integration of human and technical elements",
+      "Ongoing follow-up and periodic reporting"
+    ],
+    "faqs": [
+      {
+        "q": "What is joint security management?",
+        "a": "Artal collaborates with the client’s team to jointly manage and improve the security system."
+      },
+      {
+        "q": "Does it include improving current procedures?",
+        "a": "Yes, we review and develop procedures to raise the level of protection."
+      }
+    ]
+  }
+}
