@@ -107,7 +107,7 @@ const translations: Record<Language, Record<string, string>> = {
     'vision.badge': 'Strategic Planning',
     'vision.title': 'Our Vision',
     'vision.description': 'To be one of the best-performing companies in the field of security and safety by harnessing our experience, capabilities and competencies represented in highly qualified and distinct national cadres to find solutions for clients and reach results that guarantee continuity and success as well as to reach the highest levels of service to improve community security and develop security awareness.',
-    'mission.title': 'Our Message',
+    'mission.title': 'Our Mission',
     'mission.description': 'Harnessing all efforts and capabilities to serve the ultimate goal, which is the spread of security in society, the reduction of crime rates, and the creation of new job opportunities in the Saudi labor market in a promising field that brings prosperity and greater stability to the individual and society.',
 
     // Experience
@@ -437,7 +437,7 @@ const translations: Record<Language, Record<string, string>> = {
     'ops3.title': 'التقارير اليومية',
     'ops3.desc': 'متابعة السجلات اليومية والتقارير لجميع المواقع مع المتابعة الشخصية والتوثيق.',
     'ops4.title': 'تغطية المواقع',
-    'ops4.desc': 'تأمين المواقع بحراس عند النقص أو الغياب مع حراس بديلين أو دم التغطية.',
+    'ops4.desc': 'تأمين المواقع بحراس عند النقص أو الغياب مع حراس بديلين أو دعم التغطية.',
     'ops5.title': 'التحديثات الفورية',
     'ops5.desc': 'إبلاغ مشرف العمليات ومدير الأمن بأحداث الميدان وإطلاعهم على المستجدات.',
     'ops6.title': 'التواصل مع العملاء',
@@ -507,7 +507,7 @@ const translations: Record<Language, Record<string, string>> = {
     'maintenance.intro.desc': 'يقدم فريقنا الفني خدمات شاملة للتركيب والصيانة والتوريد لجميع أنواع معدات الأمن والمراقبة. نضمن تشغيل جميع الأنظمة بأقصى كفاءة.',
     'maint1.title': 'أنظمة كاميرات المراقبة',
     'maint1.desc': 'تركيب وصيانة احترافية لأنظمة كاميرات المراقبة',
-    'maint2.title': 'التحكم في الدول',
+    'maint2.title': 'التحكم في الدخول',
     'maint2.desc': 'أنظمة التحكم في الدخول والخروج لإدارة آمنة للمنشآت',
     'maint3.title': 'معدات السلامة',
     'maint3.desc': 'توريد وصيانة جميع معدات السلامة والأمن',

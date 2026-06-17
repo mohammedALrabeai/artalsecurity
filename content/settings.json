@@ -1,0 +1,17 @@
+{
+  "stats": [
+    { "value": "100", "suffix": "+", "labelAr": "مشروع منجز", "labelEn": "Projects Completed", "show": true },
+    { "value": "300", "suffix": "+", "labelAr": "كادر أمني مدرّب", "labelEn": "Trained Personnel", "show": true },
+    { "value": "10", "suffix": "+", "labelAr": "سنوات خبرة", "labelEn": "Years of Experience", "show": true },
+    { "value": "24/7", "suffix": "", "labelAr": "عمليات متواصلة", "labelEn": "Operations", "show": true }
+  ],
+  "contact": {
+    "phones": ["0133449993", "0133612002"],
+    "emails": ["info@artalgroup.net", "sultan@artalgroup.net", "abm@artalgroup.net", "nma@artalgroup.net"],
+    "addressAr": "ص.ب 1218 - الجبيل 31951، المملكة العربية السعودية",
+    "addressEn": "P.O. Box 1218 - Jubail 31951, Saudi Arabia",
+    "mapUrl": "https://maps.app.goo.gl/2oDPndRUm5zFiGSS9",
+    "license": "361"
+  },
+  "video": { "youtubeId": "" }
+}

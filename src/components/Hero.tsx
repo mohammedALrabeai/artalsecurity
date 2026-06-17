@@ -8,6 +8,7 @@ import {
 import { useLanguage } from "../context/LanguageContext";
 import { useState, useEffect } from "react";
 import { QuoteButton } from "./QuoteButton";
+import { STATS } from "../data/settings";
 
 // Animated Counter Component
 function AnimatedCounter({
@@ -113,26 +114,14 @@ export function Hero() {
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
 
-  const stats = [
-    {
-      icon: Target,
-      value: 200,
-      suffix: "+",
-      label: { en: "Projects Completed", ar: "مشروع منجز" },
-    },
-    {
-      icon: Users,
-      value: 500,
-      suffix: "+",
-      label: { en: "Security Personnel", ar: "موظف أمن" },
-    },
-    {
-      icon: Award,
-      value: 15,
-      suffix: "+",
-      label: { en: "Years Experience", ar: "سنة خبرة" },
-    },
-  ];
+  // الأرقام من الإعدادات (content/settings.json) — قابلة للتعديل من /admin
+  const heroIcons = [Target, Users, Award];
+  const stats = STATS.slice(0, 3).map((s, i) => ({
+    icon: heroIcons[i % heroIcons.length],
+    value: s.value,
+    suffix: s.suffix,
+    label: { ar: s.labelAr, en: s.labelEn },
+  }));
 
   return (
     <section
@@ -210,11 +199,15 @@ export function Hero() {
                   </div>
                   <div>
                     <div className="text-3xl text-white mb-1">
-                      <AnimatedCounter
-                        end={stat.value}
-                        suffix={stat.suffix}
-                        duration={2500}
-                      />
+                      {/^\d+$/.test(stat.value) ? (
+                        <AnimatedCounter
+                          end={parseInt(stat.value, 10)}
+                          suffix={stat.suffix}
+                          duration={2500}
+                        />
+                      ) : (
+                        <span>{stat.value}{stat.suffix}</span>
+                      )}
                     </div>
                     <div className="text-sm text-gray-300">
                       {t("language") === "ar"

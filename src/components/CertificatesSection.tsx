@@ -1,9 +1,10 @@
-import { Award, Shield, CheckCircle, FileCheck } from 'lucide-react';
+import { Shield, CheckCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
+import { CERTIFICATES } from '../data/certificates';
 
 export function CertificatesSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="py-20 bg-gray-50">
@@ -21,13 +22,13 @@ export function CertificatesSection() {
           </div>
         </ScrollReveal>
 
-        {/* Main License */}
+        {/* Main License — حقيقي وموثّق */}
         <ScrollReveal direction="up" delay={100}>
           <div className="bg-gradient-to-br from-[#EFB621] to-[#d9a41d] p-8 rounded-2xl text-white mb-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-[#EFB621]/30 transition-all duration-500">
             {/* Decorative circles */}
             <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -mr-20 -mt-20 group-hover:scale-150 transition-transform duration-700" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16 group-hover:scale-150 transition-transform duration-700" />
-            
+
             <div className="relative flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
                 <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center border-4 border-white/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
@@ -47,56 +48,32 @@ export function CertificatesSection() {
           </div>
         </ScrollReveal>
 
-        {/* Certificates Grid - Placeholders */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Certificate Placeholder 1 */}
-          <ScrollReveal direction="up" delay={100}>
-            <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-[#EFB621] transition-all duration-500 group hover:shadow-2xl hover:-translate-y-2">
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <Award className="w-12 h-12 text-gray-400 mx-auto mb-2 group-hover:scale-110 group-hover:text-[#EFB621] transition-all duration-300" />
-                  <p className="text-sm text-gray-500">Certificate Image</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                <span className="text-gray-700">{t('cert1.label')}</span>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          {/* Certificate Placeholder 2 */}
-          <ScrollReveal direction="up" delay={200}>
-            <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-[#EFB621] transition-all duration-500 group hover:shadow-2xl hover:-translate-y-2">
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <FileCheck className="w-12 h-12 text-gray-400 mx-auto mb-2 group-hover:scale-110 group-hover:text-[#EFB621] transition-all duration-300" />
-                  <p className="text-sm text-gray-500">Certificate Image</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                <span className="text-gray-700">{t('cert2.label')}</span>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          {/* Certificate Placeholder 3 */}
-          <ScrollReveal direction="up" delay={300}>
-            <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-[#EFB621] transition-all duration-500 group hover:shadow-2xl hover:-translate-y-2">
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <Award className="w-12 h-12 text-gray-400 mx-auto mb-2 group-hover:scale-110 group-hover:text-[#EFB621] transition-all duration-300" />
-                  <p className="text-sm text-gray-500">Certificate Image</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                <span className="text-gray-700">{t('cert3.label')}</span>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
+        {/* Certificates Grid — تُضاف من /admin بصور حقيقية (تُخفى إن كانت فارغة) */}
+        {CERTIFICATES.length > 0 && (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {CERTIFICATES.map((c, index) => {
+              const label = language === 'ar' ? c.labelAr : c.labelEn;
+              return (
+                <ScrollReveal key={index} direction="up" delay={(index + 1) * 100}>
+                  <div className="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-[#EFB621] transition-all duration-500 group hover:shadow-2xl hover:-translate-y-2">
+                    <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                      <img
+                        src={c.image}
+                        alt={label}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-gray-700">{label}</span>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+        )}
 
         {/* Additional Info */}
         <ScrollReveal direction="up" delay={100}>

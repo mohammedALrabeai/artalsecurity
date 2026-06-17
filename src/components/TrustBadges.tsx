@@ -1,33 +1,34 @@
-import { Shield, Award, Users, Clock, CheckCircle, Star } from 'lucide-react';
+import { Shield, Award, MapPin, Clock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
 
 export function TrustBadges() {
   const { language } = useLanguage();
 
+  // شارات حقيقية قابلة للإثبات فقط (لا ادعاءات ISO/أرقام غير مؤكّدة)
   const badges = [
     {
       icon: Shield,
-      title: language === 'ar' ? 'مرخص رسمياً' : 'Officially Licensed',
-      desc: language === 'ar' ? 'ترخيص رقم 361' : 'License #361',
+      title: language === 'ar' ? 'مرخّص رسمياً' : 'Officially Licensed',
+      desc: language === 'ar' ? 'ترخيص رقم 361' : 'License No. 361',
       color: 'from-[#EFB621] to-[#d9a41d]',
     },
     {
       icon: Award,
-      title: language === 'ar' ? 'جودة معتمدة' : 'Certified Quality',
-      desc: language === 'ar' ? 'ISO معتمد' : 'ISO Certified',
+      title: language === 'ar' ? 'أمن صناعي' : 'Industrial Security',
+      desc: language === 'ar' ? 'الهيئة العليا للأمن الصناعي' : 'High Authority for Industrial Security',
       color: 'from-blue-500 to-blue-600',
     },
     {
-      icon: Users,
-      title: language === 'ar' ? '+500 عميل' : '500+ Clients',
-      desc: language === 'ar' ? 'راضون تماماً' : 'Fully Satisfied',
+      icon: MapPin,
+      title: language === 'ar' ? 'تغطية وطنية' : 'Nationwide Coverage',
+      desc: language === 'ar' ? 'جميع مناطق المملكة' : 'All regions of Saudi Arabia',
       color: 'from-green-500 to-green-600',
     },
     {
       icon: Clock,
-      title: language === 'ar' ? 'دعم 24/7' : '24/7 Support',
-      desc: language === 'ar' ? 'متاح دائماً' : 'Always Available',
+      title: language === 'ar' ? 'عمليات 24/7' : '24/7 Operations',
+      desc: language === 'ar' ? 'غرفة عمليات ومراقبة' : 'Operations & monitoring room',
       color: 'from-purple-500 to-purple-600',
     },
   ];

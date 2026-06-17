@@ -2,13 +2,15 @@ import { Play, X } from 'lucide-react';
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
+import { SETTINGS } from '../data/settings';
 
 export function VideoSection() {
   const { language } = useLanguage();
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Replace with your actual YouTube video ID
-  const videoId = 'dQw4w9WgXcQ'; // Example video ID
+  // معرّف فيديو يوتيوب من الإعدادات (/admin) — يُخفى القسم بالكامل إن كان فارغاً
+  const videoId = SETTINGS.video.youtubeId;
+  if (!videoId) return null;
 
   return (
     <section className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
@@ -118,8 +120,8 @@ export function VideoSection() {
                 },
                 {
                   icon: '🏆',
-                  title: language === 'ar' ? 'جودة معتمدة' : 'Certified Quality',
-                  desc: language === 'ar' ? 'معايير عالمية في الخدمة' : 'International service standards',
+                  title: language === 'ar' ? 'خدمة احترافية' : 'Professional Service',
+                  desc: language === 'ar' ? 'كوادر مدرّبة وإجراءات منضبطة' : 'Trained personnel and disciplined procedures',
                 },
               ].map((feature, index) => (
                 <div

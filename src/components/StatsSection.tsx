@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { TrendingUp, Users, Building2, Award, Shield, Clock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { ScrollReveal } from './ScrollReveal';
+import { STATS } from '../data/settings';
 
 export function StatsSection() {
   const { language } = useLanguage();
@@ -46,50 +47,23 @@ export function StatsSection() {
     return <span>{prefix}{count}{suffix}</span>;
   };
 
-  const stats = [
-    {
-      icon: Building2,
-      value: 200,
-      suffix: '+',
-      label: language === 'ar' ? 'مشروع نشط' : 'Active Projects',
-      color: 'from-blue-500 to-blue-600',
-    },
-    {
-      icon: Users,
-      value: 500,
-      suffix: '+',
-      label: language === 'ar' ? 'موظف أمن' : 'Security Personnel',
-      color: 'from-green-500 to-green-600',
-    },
-    {
-      icon: Award,
-      value: 15,
-      suffix: '+',
-      label: language === 'ar' ? 'سنة خبرة' : 'Years Experience',
-      color: 'from-[#EFB621] to-[#d9a41d]',
-    },
-    {
-      icon: Shield,
-      value: 100,
-      suffix: '%',
-      label: language === 'ar' ? 'نسبة الأمان' : 'Safety Rate',
-      color: 'from-purple-500 to-purple-600',
-    },
-    {
-      icon: Clock,
-      value: 24,
-      suffix: '/7',
-      label: language === 'ar' ? 'خدمة متواصلة' : 'Continuous Service',
-      color: 'from-red-500 to-red-600',
-    },
-    {
-      icon: TrendingUp,
-      value: 99,
-      suffix: '%',
-      label: language === 'ar' ? 'رضا العملاء' : 'Client Satisfaction',
-      color: 'from-emerald-500 to-emerald-600',
-    },
+  // الأرقام تأتي من الإعدادات (content/settings.json) — قابلة للتعديل من /admin
+  const icons = [Building2, Users, Award, Clock, Shield, TrendingUp];
+  const colors = [
+    'from-blue-500 to-blue-600',
+    'from-green-500 to-green-600',
+    'from-[#EFB621] to-[#d9a41d]',
+    'from-red-500 to-red-600',
+    'from-purple-500 to-purple-600',
+    'from-emerald-500 to-emerald-600',
   ];
+  const stats = STATS.map((s, i) => ({
+    icon: icons[i % icons.length],
+    value: s.value,
+    suffix: s.suffix,
+    label: language === 'ar' ? s.labelAr : s.labelEn,
+    color: colors[i % colors.length],
+  }));
 
   return (
     <section ref={sectionRef} className="py-24 bg-gray-900 relative overflow-hidden">
@@ -123,7 +97,7 @@ export function StatsSection() {
         </ScrollReveal>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {stats.map((stat, index) => (
             <ScrollReveal key={index} direction="up" delay={index * 100}>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 group hover:-translate-y-2 border border-white/10">
@@ -134,7 +108,11 @@ export function StatsSection() {
 
                 {/* Number */}
                 <div className="text-3xl md:text-4xl text-white text-center mb-2">
-                  <AnimatedNumber end={stat.value} suffix={stat.suffix} />
+                  {/^\d+$/.test(stat.value) ? (
+                    <AnimatedNumber end={parseInt(stat.value, 10)} suffix={stat.suffix} />
+                  ) : (
+                    <span>{stat.value}{stat.suffix}</span>
+                  )}
                 </div>
 
                 {/* Label */}
@@ -162,8 +140,8 @@ export function StatsSection() {
           <div className="mt-16 text-center">
             <p className="text-xl text-gray-300 mb-6">
               {language === 'ar'
-                ? 'انضم إلى مئات العملاء الراضين عن خدماتنا'
-                : 'Join hundreds of satisfied clients'}
+                ? 'شركة حراسات أمنية مرخّصة — اطلب عرض سعر لمنشأتك'
+                : 'A licensed security company — request a quote for your facility'}
             </p>
             <a
               href="#contact"

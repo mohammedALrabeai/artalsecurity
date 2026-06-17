@@ -173,3 +173,103 @@ collections:
           - { name: name, label: "City name", widget: string }
           - { name: region, label: "Region", widget: string }
           - { name: blurb, label: "Blurb", widget: text }
+
+  # ───────── إعدادات الموقع (الأرقام + التواصل + الفيديو) ─────────
+  - name: settings
+    label: "إعدادات الموقع / Site Settings"
+    files:
+      - name: general
+        label: "الإعدادات العامة"
+        file: "content/settings.json"
+        fields:
+          - name: stats
+            label: "الأرقام الرئيسية (تظهر في الواجهة والبطل)"
+            widget: list
+            fields:
+              - { name: value, label: "القيمة (رقم مثل 100 أو نص مثل 24/7)", widget: string }
+              - { name: suffix, label: "لاحقة (مثل + اتركها فارغة إن لم تُرد)", widget: string, required: false, default: "" }
+              - { name: labelAr, label: "الوصف (عربي)", widget: string }
+              - { name: labelEn, label: "Label (English)", widget: string }
+              - { name: show, label: "إظهار؟", widget: boolean, default: true }
+          - name: contact
+            label: "بيانات التواصل"
+            widget: object
+            fields:
+              - { name: phones, label: "أرقام الهاتف", widget: list, field: { name: phone, label: "هاتف", widget: string } }
+              - { name: emails, label: "البريد الإلكتروني", widget: list, field: { name: email, label: "بريد", widget: string } }
+              - { name: addressAr, label: "العنوان (عربي)", widget: string }
+              - { name: addressEn, label: "Address (English)", widget: string }
+              - { name: mapUrl, label: "رابط خرائط جوجل", widget: string, required: false }
+              - { name: license, label: "رقم الترخيص", widget: string }
+          - name: video
+            label: "الفيديو التعريفي"
+            widget: object
+            fields:
+              - { name: youtubeId, label: "معرّف فيديو يوتيوب (اتركه فارغاً لإخفاء القسم)", widget: string, required: false, default: "" }
+
+  # ───────── آراء العملاء ─────────
+  - name: testimonials
+    label: "آراء العملاء / Testimonials"
+    label_singular: "رأي / Testimonial"
+    folder: "content/testimonials"
+    create: true
+    extension: json
+    format: json
+    summary: "{{fields.ar.name}}"
+    fields:
+      - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
+      - { name: rating, label: "التقييم (1–5 نجوم)", widget: number, value_type: int, default: 5, min: 1, max: 5 }
+      - name: ar
+        label: "عربي"
+        widget: object
+        fields:
+          - { name: name, label: "اسم العميل/الجهة", widget: string }
+          - { name: position, label: "المنصب/الوصف", widget: string }
+          - { name: content, label: "نص الرأي", widget: text }
+      - name: en
+        label: "English"
+        widget: object
+        fields:
+          - { name: name, label: "Client / Entity name", widget: string }
+          - { name: position, label: "Position / Role", widget: string }
+          - { name: content, label: "Testimonial text", widget: text }
+
+  # ───────── الأعمال / المشاريع ─────────
+  - name: projects
+    label: "الأعمال / Projects"
+    label_singular: "عمل / Project"
+    folder: "content/projects"
+    create: true
+    extension: json
+    format: json
+    summary: "{{fields.ar.title}}"
+    fields:
+      - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
+      - { name: image, label: "الصورة", widget: image }
+      - name: ar
+        label: "عربي"
+        widget: object
+        fields:
+          - { name: title, label: "العنوان", widget: string }
+          - { name: description, label: "الوصف", widget: text }
+      - name: en
+        label: "English"
+        widget: object
+        fields:
+          - { name: title, label: "Title", widget: string }
+          - { name: description, label: "Description", widget: text }
+
+  # ───────── الشهادات والاعتمادات (شبكة الصور) ─────────
+  - name: certificates
+    label: "الشهادات / Certificates"
+    label_singular: "شهادة / Certificate"
+    folder: "content/certificates"
+    create: true
+    extension: json
+    format: json
+    summary: "{{fields.labelAr}}"
+    fields:
+      - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
+      - { name: image, label: "صورة الشهادة", widget: image }
+      - { name: labelAr, label: "الوصف (عربي)", widget: string }
+      - { name: labelEn, label: "Label (English)", widget: string }
