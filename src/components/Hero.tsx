@@ -46,7 +46,7 @@ function AnimatedCounter({
 }
 
 export function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Background images array
@@ -66,6 +66,40 @@ export function Hero() {
     "/images/artal_security5.jpg",
     "/images/artal_security8.jpg",
   ];
+
+  // نصوص بديلة وصفية بلغتين (سيو الصور + الوصول) — متنوّعة لكل صورة
+  const imageAlts =
+    language === 'ar'
+      ? [
+          'حارس أمن مدرّب من شركة أرتال للحراسات الأمنية في موقع بالمملكة',
+          'فريق حراسة أمنية يؤمّن مدخل منشأة صناعية',
+          'حارس أمن يراقب محيط موقع إنشائي',
+          'عناصر أمن أرتال أثناء دورية ميدانية في منشأة',
+          'حارس أمن أمام بوابة مجمّع تجاري',
+          'مراقبة أمنية على مدار الساعة لمنشأة حيوية',
+          'حارس أمن مرخّص يؤمّن مرفقاً في السعودية',
+          'فريق أرتال الأمني في مهمة حراسة',
+          'تأمين منشأة صناعية بكوادر حراسة محترفة',
+          'حارس أمن ينظّم دخول المركبات إلى موقع',
+          'حراسة أمنية احترافية لمنشأة تجارية',
+          'عنصر أمن من أرتال يحرس مدخلاً رئيسياً',
+          'خدمات الحراسة الأمنية المدنية في المملكة العربية السعودية',
+        ]
+      : [
+          'Trained Artal security guard at a site in Saudi Arabia',
+          'Security team protecting an industrial facility entrance',
+          'Security guard monitoring a construction site perimeter',
+          'Artal security personnel on a field patrol at a facility',
+          'Security guard at the gate of a commercial complex',
+          '24/7 security monitoring of a vital facility',
+          'Licensed security guard protecting a facility in Saudi Arabia',
+          'Artal security team on a guarding assignment',
+          'Industrial facility secured by professional guarding staff',
+          'Security guard managing vehicle access to a site',
+          'Professional security guarding for a commercial property',
+          'Artal officer guarding a main entrance',
+          'Civil security guarding services across Saudi Arabia',
+        ];
 
   // Auto-change image every 5 seconds
   useEffect(() => {
@@ -119,7 +153,7 @@ export function Hero() {
           >
             <img
               src={image}
-              alt="Security Professional"
+              alt={imageAlts[index] ?? imageAlts[0]}
               className="w-full h-full object-cover"
               loading={index === 0 ? "eager" : "lazy"}
             />

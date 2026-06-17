@@ -1,0 +1,14 @@
+{
+  "slug": "baha",
+  "order": 19,
+  "ar": {
+    "name": "الباحة",
+    "region": "منطقة الباحة",
+    "blurb": "مدينة جبلية سياحية، بحاجة لحراسة المنتجعات والفنادق والوجهات السياحية."
+  },
+  "en": {
+    "name": "Al-Baha",
+    "region": "Al-Baha Region",
+    "blurb": "A mountain tourism city, needing security for resorts, hotels and attractions."
+  }
+}

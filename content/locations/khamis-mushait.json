@@ -1,0 +1,14 @@
+{
+  "slug": "khamis-mushait",
+  "order": 14,
+  "ar": {
+    "name": "خميس مشيط",
+    "region": "منطقة عسير",
+    "blurb": "إحدى أكبر مدن الجنوب، بطلب متزايد على حراسة المجمعات التجارية والسكنية والمنشآت الخدمية."
+  },
+  "en": {
+    "name": "Khamis Mushait",
+    "region": "Asir Region",
+    "blurb": "One of the largest cities in the south, with rising demand for commercial, residential and service-facility security."
+  }
+}

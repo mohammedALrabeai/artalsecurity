@@ -1,0 +1,14 @@
+{
+  "slug": "najran",
+  "order": 15,
+  "ar": {
+    "name": "نجران",
+    "region": "منطقة نجران",
+    "blurb": "مدينة حدودية حيوية، بفرص لحراسة المنشآت الحكومية والتجارية والمشاريع."
+  },
+  "en": {
+    "name": "Najran",
+    "region": "Najran Region",
+    "blurb": "A vital border city, with demand for securing government, commercial and project sites."
+  }
+}

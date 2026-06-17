@@ -1,0 +1,14 @@
+{
+  "slug": "hail",
+  "order": 16,
+  "ar": {
+    "name": "حائل",
+    "region": "منطقة حائل",
+    "blurb": "بوابة الشمال ومركز زراعي وتجاري، بفرص لحراسة المنشآت والمشاريع والفعاليات."
+  },
+  "en": {
+    "name": "Hail",
+    "region": "Hail Region",
+    "blurb": "A northern gateway and agricultural-commercial hub, with demand for facility, project and event security."
+  }
+}

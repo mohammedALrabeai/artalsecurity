@@ -1,0 +1,14 @@
+{
+  "slug": "arar",
+  "order": 18,
+  "ar": {
+    "name": "عرعر",
+    "region": "منطقة الحدود الشمالية",
+    "blurb": "حاضرة الحدود الشمالية، بطلب على حراسة المنشآت الحكومية والمشاريع والمواقع."
+  },
+  "en": {
+    "name": "Arar",
+    "region": "Northern Borders Region",
+    "blurb": "The hub of the Northern Borders, with demand for government, project and site security."
+  }
+}

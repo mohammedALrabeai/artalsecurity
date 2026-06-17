@@ -1,0 +1,14 @@
+{
+  "slug": "sakaka",
+  "order": 17,
+  "ar": {
+    "name": "سكاكا",
+    "region": "منطقة الجوف",
+    "blurb": "حاضرة الجوف وموطن مشاريع الطاقة المتجددة، بطلب على تأمين المشاريع والمنشآت الحيوية."
+  },
+  "en": {
+    "name": "Sakaka",
+    "region": "Al-Jouf Region",
+    "blurb": "The hub of Al-Jouf and home to renewable-energy projects, with demand for project and vital-facility security."
+  }
+}

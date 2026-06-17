@@ -5,6 +5,7 @@ import { Markdown } from '../components/Markdown';
 import { QuoteButton } from '../components/QuoteButton';
 import { useLanguage, useLocalePath } from '../context/LanguageContext';
 import { ARTICLES, ARTICLES_SORTED } from '../data/articles';
+import { SECTORS } from '../data/sectors';
 
 const SITE = 'https://artalsecurity.com';
 
@@ -105,6 +106,28 @@ export function ArticlePage() {
             </div>
           </section>
         )}
+
+        {/* روابط سياقية لصفحات القطاعات والخدمات (ربط داخلي يقوّي الصفحات التجارية) */}
+        <section className="mt-14">
+          <h2 className="text-xl font-bold text-[#0B1F3A] mb-5">{isAr ? 'خدماتنا وقطاعاتنا' : 'Our services & sectors'}</h2>
+          <div className="flex flex-wrap gap-3">
+            {SECTORS.map((s) => (
+              <Link
+                key={s.slug}
+                to={localePath(`/sectors/${s.slug}`)}
+                className="text-sm bg-white border border-gray-200 hover:border-[#EFB621] hover:text-[#EFB621] rounded-full px-4 py-2 transition-colors text-gray-700"
+              >
+                {s[language].name}
+              </Link>
+            ))}
+            <Link
+              to={localePath('/services')}
+              className="text-sm bg-[#0B1F3A] text-white rounded-full px-4 py-2 hover:opacity-90 transition-opacity"
+            >
+              {isAr ? 'كل الخدمات' : 'All services'}
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );
