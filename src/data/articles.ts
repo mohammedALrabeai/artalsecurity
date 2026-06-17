@@ -30,7 +30,9 @@ interface RawArticle {
   en: ArticleLocale;
 }
 
-import rawArticles from './articles-content.json';
+// تُحمّل كل مقالات المدوّنة من مجلد content/blog (كل مقال ملف JSON يديره الـ CMS)
+const modules = import.meta.glob('../../content/blog/*.json', { eager: true });
+const rawArticles = Object.values(modules).map((m) => ((m as { default?: RawArticle }).default ?? m) as RawArticle);
 
 export const ARTICLES: Article[] = (rawArticles as RawArticle[]).map((r) => ({
   slug: r.slug,

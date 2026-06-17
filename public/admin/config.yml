@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: mohammedALrabeai/artalsecurity
+  branch: main
+  # Worker المصادقة (سيُنشَر باسم sveltia-cms-auth على نطاقك في workers.dev):
+  base_url: https://sveltia-cms-auth.mohammedalrabeai.workers.dev
+
+site_url: https://artalsecurity.com
+display_url: https://artalsecurity.com
+
+# مكتبة الوسائط (الصور تُرفَع هنا وتُحفَظ في المستودع)
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  # ───────── المدوّنة (إضافة/تعديل مقالات بلغتين) ─────────
+  - name: blog
+    label: "المدوّنة / Blog"
+    label_singular: "مقال / Article"
+    folder: "content/blog"
+    create: true
+    extension: json
+    format: json
+    slug: "{{fields.slug}}"
+    identifier_field: slug
+    summary: "{{fields.ar.title}}"
+    fields:
+      - { name: slug, label: "Slug (رابط بالإنجليزية، بدون مسافات)", widget: string, pattern: ['^[a-z0-9-]+$', 'أحرف إنجليزية صغيرة وأرقام وشرطات فقط'] }
+      - { name: date, label: "التاريخ", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { name: category_ar, label: "التصنيف (عربي)", widget: string }
+      - { name: category_en, label: "Category (English)", widget: string }
+      - { name: keywords, label: "كلمات مفتاحية (عربي + إنجليزي، مفصولة بفواصل)", widget: text }
+      - name: ar
+        label: "المحتوى العربي"
+        widget: object
+        fields:
+          - { name: title, label: "العنوان", widget: string }
+          - { name: description, label: "وصف الميتا (≈155 حرفاً)", widget: text }
+          - { name: excerpt, label: "مقتطف قصير", widget: text }
+          - { name: body, label: "المتن (Markdown)", widget: markdown }
+      - name: en
+        label: "English content"
+        widget: object
+        fields:
+          - { name: title, label: "Title", widget: string }
+          - { name: description, label: "Meta description (~155 chars)", widget: text }
+          - { name: excerpt, label: "Short excerpt", widget: text }
+          - { name: body, label: "Body (Markdown)", widget: markdown }

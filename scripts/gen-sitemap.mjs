@@ -18,6 +18,7 @@ function walk(dir) {
 
 const locs = walk(BUILD)
   .map((f) => relative(BUILD, f).replace(/\\/g, '/').replace(/\.html$/, ''))
+  .filter((r) => !r.startsWith('admin')) // لوحة الإدارة لا تُفهرَس
   .map((r) => (r === 'index' ? '' : r))
   .map((r) => (r === '' ? `${BASE}/` : `${BASE}/${r}`))
   .sort();
