@@ -1,14 +1,37 @@
 {
   "order": 3,
   "slug": "madinah",
+  "districts": [
+    "العزيزية",
+    "قباء",
+    "الحرة الشرقية",
+    "شوران",
+    "الدفاع"
+  ],
   "ar": {
     "name": "المدينة المنورة",
     "region": "منطقة المدينة المنورة",
-    "blurb": "وجهة دائمة الحركة تحتاج حراسة للفنادق والمجمعات السكنية والمنشآت الخدمية."
+    "blurb": "وجهة دائمة الحركة تحتاج حراسة للفنادق والمجمعات السكنية والمنشآت الخدمية.",
+    "intro": "المدينة المنورة وجهة دائمة الحركة تستقبل الزوّار طوال العام، وتؤمّن أرتال فيها الفنادق والمجمعات السكنية والمنشآت الخدمية والتعليمية ضمن إجراءات منضبطة. نوفّر تغطية على مدار الساعة بكوادر وطنية مدرّبة.",
+    "sectors": [
+      "الفنادق ودور الإيواء",
+      "المجمعات السكنية",
+      "الجامعات والمنشآت التعليمية",
+      "المراكز التجارية",
+      "المنشآت الخدمية"
+    ]
   },
   "en": {
     "name": "Madinah",
     "region": "Madinah Region",
-    "blurb": "A constantly busy destination needing guarding for hotels, residential complexes and service facilities."
+    "blurb": "A constantly busy destination needing guarding for hotels, residential complexes and service facilities.",
+    "intro": "Madinah is a constantly busy destination welcoming visitors year-round. Artal secures hotels, residential complexes, and service and educational facilities with disciplined procedures and 24/7 coverage by trained national personnel.",
+    "sectors": [
+      "Hotels & accommodation",
+      "Residential complexes",
+      "Universities & educational facilities",
+      "Commercial centers",
+      "Service facilities"
+    ]
   }
 }

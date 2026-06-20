@@ -1,14 +1,37 @@
 {
   "order": 13,
   "slug": "jazan",
+  "districts": [
+    "الروضة",
+    "الصفا",
+    "المطار",
+    "الشاطئ",
+    "مطلع"
+  ],
   "ar": {
     "name": "جازان",
     "region": "منطقة جازان",
-    "blurb": "منطقة ساحلية واعدة بمشاريع كبرى، تتطلب كوادر لحراسة الموانئ والمنشآت الصناعية."
+    "blurb": "منطقة ساحلية واعدة بمشاريع كبرى، تتطلب كوادر لحراسة الموانئ والمنشآت الصناعية.",
+    "intro": "جازان منطقة ساحلية واعدة بمشاريع كبرى ومدينة صناعية حديثة، وتؤمّن أرتال فيها الميناء والمنشآت الصناعية والمزارع. النمو في المنطقة يخلق طلباً متزايداً على الحراسة المتخصّصة.",
+    "sectors": [
+      "ميناء جازان",
+      "المدينة الصناعية",
+      "المنشآت الصناعية",
+      "المزارع والمنشآت الزراعية",
+      "المراكز التجارية"
+    ]
   },
   "en": {
     "name": "Jazan",
     "region": "Jazan Region",
-    "blurb": "A promising coastal region with mega projects, requiring port and industrial facility security."
+    "blurb": "A promising coastal region with mega projects, requiring port and industrial facility security.",
+    "intro": "Jazan is a promising coastal region with mega projects and a modern industrial city. Artal secures the port, industrial facilities and farms; the region’s growth creates rising demand for specialized security.",
+    "sectors": [
+      "Jazan Port",
+      "Industrial city",
+      "Industrial facilities",
+      "Farms & agricultural facilities",
+      "Commercial centers"
+    ]
   }
 }

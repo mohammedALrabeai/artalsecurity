@@ -1,14 +1,36 @@
 {
   "order": 12,
   "slug": "yanbu",
+  "districts": [
+    "ينبع الصناعية",
+    "ينبع البلد",
+    "شرم ينبع",
+    "المنطقة السكنية"
+  ],
   "ar": {
     "name": "ينبع",
     "region": "منطقة المدينة المنورة",
-    "blurb": "مدينة صناعية وميناء مهم على البحر الأحمر، بطلب على حراسة المنشآت الصناعية والمواقع."
+    "blurb": "مدينة صناعية وميناء مهم على البحر الأحمر، بطلب على حراسة المنشآت الصناعية والمواقع.",
+    "intro": "ينبع مدينة صناعية وميناء مهم على البحر الأحمر، وتؤمّن أرتال فيها المنشآت الصناعية والبتروكيماوية والميناء والمجمعات السكنية للشركات. نقدّم حراسة متخصّصة للمنشآت الحيوية والصناعية الكبرى.",
+    "sectors": [
+      "المنشآت الصناعية والبتروكيماوية",
+      "الميناء والمستودعات",
+      "المجمعات السكنية للشركات",
+      "المراكز التجارية",
+      "المنشآت الحيوية"
+    ]
   },
   "en": {
     "name": "Yanbu",
     "region": "Madinah Region",
-    "blurb": "An industrial city and key Red Sea port, with demand for industrial facility and site security."
+    "blurb": "An industrial city and key Red Sea port, with demand for industrial facility and site security.",
+    "intro": "Yanbu is an industrial city and a key Red Sea port. Artal secures industrial and petrochemical facilities, the port, and corporate residential compounds, providing specialized guarding for major vital and industrial sites.",
+    "sectors": [
+      "Industrial & petrochemical facilities",
+      "Port & warehouses",
+      "Corporate residential compounds",
+      "Commercial centers",
+      "Vital facilities"
+    ]
   }
 }

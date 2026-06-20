@@ -1,14 +1,37 @@
 {
   "order": 9,
   "slug": "tabuk",
+  "districts": [
+    "المروج",
+    "السلام",
+    "العزيزية",
+    "الورود",
+    "المصيف"
+  ],
   "ar": {
     "name": "تبوك",
     "region": "منطقة تبوك",
-    "blurb": "بوابة الشمال الغربي ومنطقة المشاريع الكبرى، بفرص متنامية لحراسة المواقع والمشاريع."
+    "blurb": "بوابة الشمال الغربي ومنطقة المشاريع الكبرى، بفرص متنامية لحراسة المواقع والمشاريع.",
+    "intro": "تبوك بوابة الشمال الغربي ومنطقة المشاريع الكبرى ومنها نيوم، وتؤمّن أرتال فيها المواقع الإنشائية والمنشآت الحكومية والمستودعات. النمو المتسارع في المنطقة يفتح طلباً متنامياً على الحراسة المتخصّصة للمشاريع.",
+    "sectors": [
+      "المشاريع والمواقع الإنشائية",
+      "المنشآت الحكومية",
+      "المستودعات",
+      "المراكز التجارية",
+      "المجمعات السكنية"
+    ]
   },
   "en": {
     "name": "Tabuk",
     "region": "Tabuk Region",
-    "blurb": "The northwestern gateway and mega-project zone, with growing demand for site and project security."
+    "blurb": "The northwestern gateway and mega-project zone, with growing demand for site and project security.",
+    "intro": "Tabuk is the northwestern gateway and a mega-project zone including NEOM. Artal secures construction sites, government facilities and warehouses. The region’s rapid growth opens rising demand for specialized project security.",
+    "sectors": [
+      "Projects & construction sites",
+      "Government facilities",
+      "Warehouses",
+      "Commercial centers",
+      "Residential complexes"
+    ]
   }
 }

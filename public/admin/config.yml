@@ -159,20 +159,29 @@ collections:
     fields:
       - { name: order, label: "الترتيب", widget: number, value_type: int, default: 0 }
       - { name: slug, label: "Slug (إنجليزي)", widget: string, pattern: ['^[a-z0-9-]+$', 'أحرف صغيرة وأرقام وشرطات'] }
+      - name: districts
+        label: "الأحياء/المناطق (تظهر في الصفحة العربية — سيو محلي)"
+        widget: list
+        required: false
+        field: { name: district, label: "حي/منطقة", widget: string }
       - name: ar
         label: "المحتوى العربي"
         widget: object
         fields:
           - { name: name, label: "اسم المدينة", widget: string }
           - { name: region, label: "المنطقة", widget: string }
-          - { name: blurb, label: "وصف تعريفي", widget: text }
+          - { name: blurb, label: "وصف تعريفي قصير", widget: text }
+          - { name: intro, label: "مقدمة فريدة (فقرة خاصة بالمدينة)", widget: text, required: false }
+          - { name: sectors, label: "ما نؤمّنه في المدينة", widget: list, required: false, field: { name: item, label: "نوع منشأة", widget: string } }
       - name: en
         label: "English content"
         widget: object
         fields:
           - { name: name, label: "City name", widget: string }
           - { name: region, label: "Region", widget: string }
-          - { name: blurb, label: "Blurb", widget: text }
+          - { name: blurb, label: "Short blurb", widget: text }
+          - { name: intro, label: "Unique intro (city-specific paragraph)", widget: text, required: false }
+          - { name: sectors, label: "What we secure", widget: list, required: false, field: { name: item, label: "Facility type", widget: string } }
 
   # ───────── إعدادات الموقع (الأرقام + التواصل + الفيديو) ─────────
   - name: settings

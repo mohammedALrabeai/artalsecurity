@@ -1,14 +1,36 @@
 {
-  "slug": "sakaka",
   "order": 17,
+  "slug": "sakaka",
+  "districts": [
+    "العزيزية",
+    "الفيصلية",
+    "الشلهوب",
+    "الصالحية"
+  ],
   "ar": {
     "name": "سكاكا",
     "region": "منطقة الجوف",
-    "blurb": "حاضرة الجوف وموطن مشاريع الطاقة المتجددة، بطلب على تأمين المشاريع والمنشآت الحيوية."
+    "blurb": "حاضرة الجوف وموطن مشاريع الطاقة المتجددة، بطلب على تأمين المشاريع والمنشآت الحيوية.",
+    "intro": "سكاكا حاضرة الجوف وموطن مشاريع الطاقة المتجددة الكبرى، وتؤمّن أرتال فيها المشاريع والمنشآت الحيوية والمراكز التجارية والمنشآت الحكومية. نقدّم حراسة متخصّصة للمشاريع الحيوية والمواقع الممتدة.",
+    "sectors": [
+      "مشاريع الطاقة المتجددة",
+      "المنشآت الحيوية",
+      "المنشآت الحكومية",
+      "المراكز التجارية",
+      "المستودعات"
+    ]
   },
   "en": {
     "name": "Sakaka",
     "region": "Al-Jouf Region",
-    "blurb": "The hub of Al-Jouf and home to renewable-energy projects, with demand for project and vital-facility security."
+    "blurb": "The hub of Al-Jouf and home to renewable-energy projects, with demand for project and vital-facility security.",
+    "intro": "Sakaka is the hub of Al-Jouf and home to major renewable-energy projects. Artal secures projects, vital facilities, commercial centers and government facilities, with specialized guarding for vital projects and extensive sites.",
+    "sectors": [
+      "Renewable-energy projects",
+      "Vital facilities",
+      "Government facilities",
+      "Commercial centers",
+      "Warehouses"
+    ]
   }
 }

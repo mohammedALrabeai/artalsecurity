@@ -1,14 +1,37 @@
 {
   "order": 7,
   "slug": "ahsa",
+  "districts": [
+    "الهفوف",
+    "المبرز",
+    "العيون",
+    "الجشة",
+    "الطرف"
+  ],
   "ar": {
     "name": "الأحساء",
     "region": "المنطقة الشرقية",
-    "blurb": "من أكبر محافظات المملكة، بفرص لحراسة المنشآت الزراعية والتجارية والحكومية."
+    "blurb": "من أكبر محافظات المملكة، بفرص لحراسة المنشآت الزراعية والتجارية والحكومية.",
+    "intro": "الأحساء من أكبر محافظات المملكة وأكثرها تنوّعاً اقتصادياً، وتؤمّن أرتال فيها المنشآت والمزارع الزراعية والمراكز التجارية والمنشآت الحكومية والمستودعات. نقدّم حلولاً تناسب اتساع المواقع وتنوّعها.",
+    "sectors": [
+      "المنشآت والمزارع الزراعية",
+      "المراكز والمجمعات التجارية",
+      "المنشآت الحكومية",
+      "المستودعات",
+      "المجمعات السكنية"
+    ]
   },
   "en": {
     "name": "Al-Ahsa",
     "region": "Eastern Province",
-    "blurb": "One of the Kingdom’s largest governorates, with demand for agricultural, commercial and government security."
+    "blurb": "One of the Kingdom’s largest governorates, with demand for agricultural, commercial and government security.",
+    "intro": "Al-Ahsa is one of the Kingdom’s largest and most economically diverse governorates. Artal secures agricultural facilities and farms, commercial centers, government facilities and warehouses, with solutions suited to large and varied sites.",
+    "sectors": [
+      "Agricultural facilities & farms",
+      "Commercial centers & malls",
+      "Government facilities",
+      "Warehouses",
+      "Residential complexes"
+    ]
   }
 }

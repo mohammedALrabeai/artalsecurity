@@ -7,11 +7,14 @@ export interface CityContent {
   name: string;
   region: string;
   blurb: string;
+  intro?: string;        // مقدمة فريدة خاصة بالمدينة (تمنع تكرار المحتوى)
+  sectors?: string[];    // ما نؤمّنه في المدينة (أنواع المنشآت)
 }
 
 export interface City {
   slug: string;
   order?: number;
+  districts?: string[];  // أحياء/مناطق المدينة (سيو محلي — تُعرض في النسخة العربية)
   en: CityContent;
   ar: CityContent;
 }

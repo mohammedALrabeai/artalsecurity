@@ -1,14 +1,38 @@
 {
   "order": 4,
   "slug": "dammam",
+  "districts": [
+    "الشاطئ",
+    "الفيصلية",
+    "الجلوية",
+    "الأنوار",
+    "النور",
+    "الريان"
+  ],
   "ar": {
     "name": "الدمام",
     "region": "المنطقة الشرقية",
-    "blurb": "قلب المنطقة الشرقية الصناعي، بطلب متواصل على حراسة المنشآت النفطية والصناعية والتجارية."
+    "blurb": "قلب المنطقة الشرقية الصناعي، بطلب متواصل على حراسة المنشآت النفطية والصناعية والتجارية.",
+    "intro": "الدمام قلب المنطقة الشرقية، وتؤمّن أرتال فيها المنشآت الصناعية والنفطية والمستودعات اللوجستية والمولات والأبراج. قربها من المدن الصناعية والموانئ يجعل الطلب على الحراسة المتخصّصة متواصلاً، ونغطّيه بخبرة ميدانية عميقة.",
+    "sectors": [
+      "المنشآت الصناعية والنفطية",
+      "المستودعات والمناطق اللوجستية",
+      "المولات والمراكز التجارية",
+      "الأبراج والمجمعات السكنية",
+      "المنشآت الحكومية"
+    ]
   },
   "en": {
     "name": "Dammam",
     "region": "Eastern Province",
-    "blurb": "The industrial heart of the Eastern Province, with steady demand for oil, industrial and commercial security."
+    "blurb": "The industrial heart of the Eastern Province, with steady demand for oil, industrial and commercial security.",
+    "intro": "Dammam is the heart of the Eastern Province. Artal secures industrial and oil facilities, logistics warehouses, malls and towers. Its proximity to industrial cities and ports drives steady demand for specialized guarding, which we cover with deep field experience.",
+    "sectors": [
+      "Industrial & oil facilities",
+      "Warehouses & logistics zones",
+      "Malls & commercial centers",
+      "Towers & residential complexes",
+      "Government facilities"
+    ]
   }
 }

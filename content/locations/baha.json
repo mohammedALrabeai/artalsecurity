@@ -1,14 +1,30 @@
 {
-  "slug": "baha",
   "order": 19,
+  "slug": "baha",
   "ar": {
     "name": "الباحة",
     "region": "منطقة الباحة",
-    "blurb": "مدينة جبلية سياحية، بحاجة لحراسة المنتجعات والفنادق والوجهات السياحية."
+    "blurb": "مدينة جبلية سياحية، بحاجة لحراسة المنتجعات والفنادق والوجهات السياحية.",
+    "intro": "الباحة مدينة جبلية سياحية، وتؤمّن أرتال فيها المنتجعات والفنادق والوجهات السياحية والمراكز التجارية. يرتفع الطلب على الحراسة في مواسم السياحة، ونغطّيه بكوادر مدرّبة.",
+    "sectors": [
+      "المنتجعات والفنادق",
+      "الوجهات السياحية",
+      "المراكز التجارية",
+      "المجمعات السكنية",
+      "المنشآت الخدمية"
+    ]
   },
   "en": {
     "name": "Al-Baha",
     "region": "Al-Baha Region",
-    "blurb": "A mountain tourism city, needing security for resorts, hotels and attractions."
+    "blurb": "A mountain tourism city, needing security for resorts, hotels and attractions.",
+    "intro": "Al-Baha is a mountain tourism city. Artal secures resorts, hotels, attractions and commercial centers, with trained personnel to cover the rise in demand during tourism seasons.",
+    "sectors": [
+      "Resorts & hotels",
+      "Tourist attractions",
+      "Commercial centers",
+      "Residential complexes",
+      "Service facilities"
+    ]
   }
 }

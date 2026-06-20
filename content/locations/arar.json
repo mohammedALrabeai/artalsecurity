@@ -1,14 +1,37 @@
 {
-  "slug": "arar",
   "order": 18,
+  "slug": "arar",
+  "districts": [
+    "الفيصلية",
+    "الروضة",
+    "المساعدية",
+    "العزيزية",
+    "المنازل"
+  ],
   "ar": {
     "name": "عرعر",
     "region": "منطقة الحدود الشمالية",
-    "blurb": "حاضرة الحدود الشمالية، بطلب على حراسة المنشآت الحكومية والمشاريع والمواقع."
+    "blurb": "حاضرة الحدود الشمالية، بطلب على حراسة المنشآت الحكومية والمشاريع والمواقع.",
+    "intro": "عرعر حاضرة الحدود الشمالية، وتؤمّن أرتال فيها المنشآت الحكومية والمشاريع والمراكز التجارية والمستودعات. نوفّر حلول حراسة تناسب المواقع الحدودية والمنشآت الحيوية.",
+    "sectors": [
+      "المنشآت الحكومية",
+      "المشاريع والمواقع",
+      "المراكز التجارية",
+      "المستودعات",
+      "المجمعات السكنية"
+    ]
   },
   "en": {
     "name": "Arar",
     "region": "Northern Borders Region",
-    "blurb": "The hub of the Northern Borders, with demand for government, project and site security."
+    "blurb": "The hub of the Northern Borders, with demand for government, project and site security.",
+    "intro": "Arar is the hub of the Northern Borders. Artal secures government facilities, projects, commercial centers and warehouses, with guarding solutions suited to border sites and vital facilities.",
+    "sectors": [
+      "Government facilities",
+      "Projects & sites",
+      "Commercial centers",
+      "Warehouses",
+      "Residential complexes"
+    ]
   }
 }

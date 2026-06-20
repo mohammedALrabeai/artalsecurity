@@ -1,14 +1,37 @@
 {
-  "slug": "najran",
   "order": 15,
+  "slug": "najran",
+  "districts": [
+    "الفهد",
+    "الموفجة",
+    "الفيصلية",
+    "أبا السعود",
+    "الغويلا"
+  ],
   "ar": {
     "name": "نجران",
     "region": "منطقة نجران",
-    "blurb": "مدينة حدودية حيوية، بفرص لحراسة المنشآت الحكومية والتجارية والمشاريع."
+    "blurb": "مدينة حدودية حيوية، بفرص لحراسة المنشآت الحكومية والتجارية والمشاريع.",
+    "intro": "نجران مدينة حدودية حيوية تشهد توسّعاً عمرانياً، وتؤمّن أرتال فيها المنشآت الحكومية والمشاريع والمراكز التجارية والمستودعات. نوفّر حلول حراسة تناسب المواقع الحدودية والمشاريع الجديدة.",
+    "sectors": [
+      "المنشآت الحكومية",
+      "المشاريع والمواقع الإنشائية",
+      "المراكز التجارية",
+      "المستودعات",
+      "المجمعات السكنية"
+    ]
   },
   "en": {
     "name": "Najran",
     "region": "Najran Region",
-    "blurb": "A vital border city, with demand for securing government, commercial and project sites."
+    "blurb": "A vital border city, with demand for securing government, commercial and project sites.",
+    "intro": "Najran is a vital border city undergoing urban expansion. Artal secures government facilities, projects, commercial centers and warehouses, with solutions suited to border sites and new developments.",
+    "sectors": [
+      "Government facilities",
+      "Projects & construction sites",
+      "Commercial centers",
+      "Warehouses",
+      "Residential complexes"
+    ]
   }
 }

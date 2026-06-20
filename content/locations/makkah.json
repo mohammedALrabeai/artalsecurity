@@ -1,14 +1,38 @@
 {
   "order": 2,
   "slug": "makkah",
+  "districts": [
+    "العزيزية",
+    "الششة",
+    "الزاهر",
+    "النسيم",
+    "العوالي",
+    "الكعكية"
+  ],
   "ar": {
     "name": "مكة المكرمة",
     "region": "منطقة مكة المكرمة",
-    "blurb": "مدينة ذات كثافة عالية على مدار العام تتطلب كوادر حراسة مدرّبة للفنادق والمنشآت الكبرى."
+    "blurb": "مدينة ذات كثافة عالية على مدار العام تتطلب كوادر حراسة مدرّبة للفنادق والمنشآت الكبرى.",
+    "intro": "مكة المكرمة مدينة عالية الكثافة على مدار العام، وتتطلب حضوراً أمنياً مكثّفاً لتأمين الفنادق وأبراج الإيواء والمجمعات السكنية والمراكز الخدمية. تقدّم أرتال كوادر مدرّبة على إدارة المواقع عالية الحركة بانضباط واحترافية.",
+    "sectors": [
+      "الفنادق وأبراج الإيواء",
+      "المجمعات السكنية",
+      "المراكز والمجمعات التجارية",
+      "المنشآت الخدمية",
+      "المواقف ومراكز الخدمات"
+    ]
   },
   "en": {
     "name": "Makkah",
     "region": "Makkah Region",
-    "blurb": "A high-density city year-round requiring trained guards for hotels and major facilities."
+    "blurb": "A high-density city year-round requiring trained guards for hotels and major facilities.",
+    "intro": "Makkah is a high-density city year-round, requiring an intensive security presence for hotels, accommodation towers, residential complexes and service centers. Artal provides personnel trained to manage high-traffic sites with discipline and professionalism.",
+    "sectors": [
+      "Hotels & accommodation towers",
+      "Residential complexes",
+      "Commercial centers & malls",
+      "Service facilities",
+      "Parking & service centers"
+    ]
   }
 }

@@ -1,14 +1,37 @@
 {
-  "slug": "hail",
   "order": 16,
+  "slug": "hail",
+  "districts": [
+    "النقرة",
+    "الزبارة",
+    "السمراء",
+    "المطار",
+    "الخزامى"
+  ],
   "ar": {
     "name": "حائل",
     "region": "منطقة حائل",
-    "blurb": "بوابة الشمال ومركز زراعي وتجاري، بفرص لحراسة المنشآت والمشاريع والفعاليات."
+    "blurb": "بوابة الشمال ومركز زراعي وتجاري، بفرص لحراسة المنشآت والمشاريع والفعاليات.",
+    "intro": "حائل بوابة الشمال وحاضرة زراعية وتجارية مهمة، وتؤمّن أرتال فيها المنشآت الزراعية الكبرى والأسواق والفعاليات والمستودعات. لدينا خبرة في تأمين الفعاليات والمواقع الزراعية الواسعة.",
+    "sectors": [
+      "المنشآت الزراعية الكبرى",
+      "الأسواق والمراكز التجارية",
+      "الفعاليات والمهرجانات",
+      "المستودعات",
+      "المنشآت الحكومية"
+    ]
   },
   "en": {
     "name": "Hail",
     "region": "Hail Region",
-    "blurb": "A northern gateway and agricultural-commercial hub, with demand for facility, project and event security."
+    "blurb": "A northern gateway and agricultural-commercial hub, with demand for facility, project and event security.",
+    "intro": "Hail is a northern gateway and an important agricultural and commercial hub. Artal secures large agricultural facilities, markets, events and warehouses, with experience in protecting events and extensive agricultural sites.",
+    "sectors": [
+      "Large agricultural facilities",
+      "Markets & commercial centers",
+      "Events & festivals",
+      "Warehouses",
+      "Government facilities"
+    ]
   }
 }

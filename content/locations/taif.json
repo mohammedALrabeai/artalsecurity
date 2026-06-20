@@ -1,14 +1,37 @@
 {
   "order": 8,
   "slug": "taif",
+  "districts": [
+    "الحوية",
+    "الشفا",
+    "الهدا",
+    "شهار",
+    "قروى"
+  ],
   "ar": {
     "name": "الطائف",
     "region": "منطقة مكة المكرمة",
-    "blurb": "مدينة المصايف، بطلب على حراسة المنتجعات والمجمعات السياحية والسكنية."
+    "blurb": "مدينة المصايف، بطلب على حراسة المنتجعات والمجمعات السياحية والسكنية.",
+    "intro": "الطائف مدينة المصايف ووجهة سياحية صيفية، وتؤمّن أرتال فيها المنتجعات والفنادق والمجمعات السكنية والأسواق. يرتفع الطلب على الحراسة في موسم الصيف، ونوفّر كوادر إضافية مدرّبة لتغطية الذروة.",
+    "sectors": [
+      "المنتجعات والمصايف",
+      "الفنادق",
+      "المجمعات السكنية",
+      "الأسواق والمراكز التجارية",
+      "الوجهات السياحية"
+    ]
   },
   "en": {
     "name": "Taif",
     "region": "Makkah Region",
-    "blurb": "A resort city with demand for guarding resorts, tourist and residential complexes."
+    "blurb": "A resort city with demand for guarding resorts, tourist and residential complexes.",
+    "intro": "Taif is a resort city and a summer tourist destination. Artal secures resorts, hotels, residential complexes and markets, providing additional trained personnel to cover the summer peak in demand.",
+    "sectors": [
+      "Resorts",
+      "Hotels",
+      "Residential complexes",
+      "Markets & commercial centers",
+      "Tourist destinations"
+    ]
   }
 }

@@ -1,14 +1,37 @@
 {
-  "slug": "khamis-mushait",
   "order": 14,
+  "slug": "khamis-mushait",
+  "districts": [
+    "الراقي",
+    "الأندلس",
+    "تهامة",
+    "الموسى",
+    "الخالدية"
+  ],
   "ar": {
     "name": "خميس مشيط",
     "region": "منطقة عسير",
-    "blurb": "إحدى أكبر مدن الجنوب، بطلب متزايد على حراسة المجمعات التجارية والسكنية والمنشآت الخدمية."
+    "blurb": "إحدى أكبر مدن الجنوب، بطلب متزايد على حراسة المجمعات التجارية والسكنية والمنشآت الخدمية.",
+    "intro": "خميس مشيط من أكبر مدن الجنوب وأكثرها حركة، وتؤمّن أرتال فيها المجمعات التجارية والمستودعات والمجمعات السكنية والمنشآت الخدمية. نقدّم حراسة احترافية للمواقع التجارية والسكنية المتنامية.",
+    "sectors": [
+      "المجمعات التجارية",
+      "المستودعات",
+      "المجمعات السكنية",
+      "المنشآت الخدمية",
+      "الأسواق"
+    ]
   },
   "en": {
     "name": "Khamis Mushait",
     "region": "Asir Region",
-    "blurb": "One of the largest cities in the south, with rising demand for commercial, residential and service-facility security."
+    "blurb": "One of the largest cities in the south, with rising demand for commercial, residential and service-facility security.",
+    "intro": "Khamis Mushait is one of the largest and busiest cities in the south. Artal secures commercial complexes, warehouses, residential complexes and service facilities, with professional guarding for growing commercial and residential sites.",
+    "sectors": [
+      "Commercial complexes",
+      "Warehouses",
+      "Residential complexes",
+      "Service facilities",
+      "Markets"
+    ]
   }
 }

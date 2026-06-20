@@ -1,14 +1,38 @@
 {
   "order": 5,
   "slug": "khobar",
+  "districts": [
+    "العقربية",
+    "الراكة",
+    "الثقبة",
+    "الحزام الذهبي",
+    "اليرموك",
+    "الخبر الشمالية"
+  ],
   "ar": {
     "name": "الخبر",
     "region": "المنطقة الشرقية",
-    "blurb": "مدينة تجارية حيوية على الخليج، بفرص لحراسة المولات والأبراج والمجمعات السكنية."
+    "blurb": "مدينة تجارية حيوية على الخليج، بفرص لحراسة المولات والأبراج والمجمعات السكنية.",
+    "intro": "الخبر مدينة تجارية وسياحية نشطة على ساحل الخليج، وتؤمّن أرتال فيها المولات والأبراج والمجمعات السكنية والمطاعم والفنادق على الكورنيش. نقدّم حلول حراسة تناسب المواقع عالية الإقبال والواجهات التجارية.",
+    "sectors": [
+      "المولات والمراكز التجارية",
+      "الأبراج والمكاتب",
+      "المجمعات السكنية",
+      "الفنادق والمطاعم",
+      "الواجهات والكورنيش"
+    ]
   },
   "en": {
     "name": "Khobar",
     "region": "Eastern Province",
-    "blurb": "A vibrant commercial city on the Gulf, with demand for mall, tower and residential security."
+    "blurb": "A vibrant commercial city on the Gulf, with demand for mall, tower and residential security.",
+    "intro": "Khobar is an active commercial and tourist city on the Gulf coast. Artal secures malls, towers, residential complexes, restaurants and Corniche hotels, offering guarding solutions suited to high-footfall sites and retail frontages.",
+    "sectors": [
+      "Malls & commercial centers",
+      "Towers & offices",
+      "Residential complexes",
+      "Hotels & restaurants",
+      "Waterfront & Corniche"
+    ]
   }
 }

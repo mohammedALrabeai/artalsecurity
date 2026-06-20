@@ -1,14 +1,37 @@
 {
   "order": 11,
   "slug": "buraidah",
+  "districts": [
+    "الصفراء",
+    "الإسكان",
+    "الريان",
+    "النهضة",
+    "الفايزية"
+  ],
   "ar": {
     "name": "بريدة",
     "region": "منطقة القصيم",
-    "blurb": "حاضرة القصيم التجارية والزراعية، بفرص لحراسة الأسواق والمستودعات والمنشآت."
+    "blurb": "حاضرة القصيم التجارية والزراعية، بفرص لحراسة الأسواق والمستودعات والمنشآت.",
+    "intro": "بريدة حاضرة القصيم التجارية والزراعية، وتؤمّن أرتال فيها الأسواق المركزية والمستودعات والمنشآت الزراعية والمراكز التجارية. نقدّم حلول حراسة تناسب المواقع التجارية والزراعية الواسعة.",
+    "sectors": [
+      "الأسواق المركزية",
+      "المستودعات",
+      "المنشآت الزراعية",
+      "المراكز التجارية",
+      "المنشآت الحكومية"
+    ]
   },
   "en": {
     "name": "Buraidah",
     "region": "Qassim Region",
-    "blurb": "Qassim’s commercial and agricultural hub, with demand for market, warehouse and facility security."
+    "blurb": "Qassim’s commercial and agricultural hub, with demand for market, warehouse and facility security.",
+    "intro": "Buraidah is Qassim’s commercial and agricultural hub. Artal secures central markets, warehouses, agricultural facilities and commercial centers, with guarding solutions suited to large commercial and agricultural sites.",
+    "sectors": [
+      "Central markets",
+      "Warehouses",
+      "Agricultural facilities",
+      "Commercial centers",
+      "Government facilities"
+    ]
   }
 }

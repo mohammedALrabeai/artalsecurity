@@ -1,14 +1,38 @@
 {
   "order": 0,
   "slug": "riyadh",
+  "districts": [
+    "العليا",
+    "الملقا",
+    "حي السفارات",
+    "الياسمين",
+    "الملز",
+    "النخيل"
+  ],
   "ar": {
     "name": "الرياض",
     "region": "منطقة الرياض",
-    "blurb": "العاصمة وأكبر مركز تجاري وحكومي وصناعي في المملكة، بطلب عالٍ على حراسة المنشآت والأبراج والمجمعات."
+    "blurb": "العاصمة وأكبر مركز تجاري وحكومي وصناعي في المملكة، بطلب عالٍ على حراسة المنشآت والأبراج والمجمعات.",
+    "intro": "الرياض العاصمة وأكبر سوق للخدمات الأمنية في المملكة، وتؤمّن أرتال فيها المجمعات التجارية والأبراج المكتبية والمنشآت الحكومية والمجمعات السكنية بكوادر سعودية مدرّبة. خبرتنا في تأمين المواقع عالية الحركة تجعلنا شريكاً موثوقاً لمنشآت الرياض على مدار الساعة.",
+    "sectors": [
+      "المجمعات التجارية والمولات",
+      "الأبراج والمكاتب الإدارية",
+      "المنشآت الحكومية والهيئات",
+      "المجمعات السكنية المغلقة",
+      "المستودعات والمناطق اللوجستية"
+    ]
   },
   "en": {
     "name": "Riyadh",
     "region": "Riyadh Region",
-    "blurb": "The capital and largest commercial, government and industrial hub, with high demand for facility, tower and complex security."
+    "blurb": "The capital and largest commercial, government and industrial hub, with high demand for facility, tower and complex security.",
+    "intro": "Riyadh is the capital and the largest market for security services in the Kingdom. Artal secures commercial complexes, office towers, government facilities and residential compounds across the city with trained Saudi personnel and 24/7 operations.",
+    "sectors": [
+      "Commercial complexes & malls",
+      "Office towers & buildings",
+      "Government facilities & authorities",
+      "Gated residential compounds",
+      "Warehouses & logistics zones"
+    ]
   }
 }

@@ -37,19 +37,26 @@ export function LocationPage() {
   const others = CITIES.filter((x) => x.slug !== city.slug);
 
   const heading = isAr ? `شركة حراسات أمنية في ${c.name}` : `Security Guarding Company in ${c.name}`;
-  const intro = isAr
+  const introFallback = isAr
     ? `توفّر شركة أرتال الموحدة للحراسات الأمنية — المرخّصة من الهيئة العليا للأمن الصناعي (رقم 361) — خدمات حراسة أمنية احترافية في ${c.name} ضمن ${c.region}. ${c.blurb} نخدم المنشآت الصناعية والتجارية والسكنية والحكومية بكوادر مدرّبة وعمليات على مدار الساعة.`
     : `Artal Unified Security Services — licensed by the High Authority for Industrial Security (No. 361) — provides professional security guarding in ${c.name}, ${c.region}. ${c.blurb} We secure industrial, commercial, residential and government facilities with trained personnel and 24/7 operations.`;
+  const intro = c.intro || introFallback;
+  const sectorTypes = c.sectors ?? [];
+  const districts = city.districts ?? [];
+
+  const sectorsAnswer = sectorTypes.length
+    ? (isAr ? `نخدم في ${c.name}: ${sectorTypes.join('، ')}.` : `In ${c.name} we secure: ${sectorTypes.join(', ')}.`)
+    : (isAr ? 'نخدم المنشآت الصناعية والمصانع، المجمعات التجارية والسكنية، المشاريع والإنشاءات، والمنشآت الحكومية والحيوية.' : 'We serve industrial facilities and factories, commercial and residential complexes, construction projects, and government and vital facilities.');
 
   const faqs = isAr
     ? [
         { q: `هل تقدّمون خدمات الحراسة الأمنية في ${c.name}؟`, a: `نعم، توفّر أرتال حراسة أمنية في ${c.name} وجميع مناطق المملكة، بكوادر مدرّبة وترخيص رقم 361.` },
-        { q: `ما القطاعات التي تخدمونها في ${c.name}؟`, a: 'نخدم المنشآت الصناعية والمصانع، المجمعات التجارية والسكنية، المشاريع والإنشاءات، والمنشآت الحكومية والحيوية.' },
+        { q: `ما القطاعات التي تخدمونها في ${c.name}؟`, a: sectorsAnswer },
         { q: `كيف أطلب عرض سعر لحراسة منشأة في ${c.name}؟`, a: 'تواصل معنا عبر الموقع أو الهاتف، وسيقوم فريقنا بزيارة الموقع وتقديم عرض مخصّص.' },
       ]
     : [
         { q: `Do you provide security guarding in ${c.name}?`, a: `Yes, Artal provides security guarding in ${c.name} and all regions of Saudi Arabia, with trained personnel and License No. 361.` },
-        { q: `Which sectors do you serve in ${c.name}?`, a: 'We serve industrial facilities and factories, commercial and residential complexes, construction projects, and government and vital facilities.' },
+        { q: `Which sectors do you serve in ${c.name}?`, a: sectorsAnswer },
         { q: `How do I request a quote for a facility in ${c.name}?`, a: 'Contact us via the website or phone; our team will survey the site and provide a tailored proposal.' },
       ];
 
@@ -131,6 +138,23 @@ export function LocationPage() {
       </section>
 
       <main className="max-w-5xl mx-auto px-6 py-16 space-y-16">
+        {/* What we secure in this city (unique per city) */}
+        {sectorTypes.length > 0 && (
+          <section>
+            <h2 className="text-2xl font-bold text-[#0B1F3A] mb-6">
+              {isAr ? `ما نؤمّنه في ${c.name}` : `What we secure in ${c.name}`}
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {sectorTypes.map((s) => (
+                <div key={s} className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                  <ShieldCheck className="w-5 h-5 text-[#EFB621] flex-shrink-0" />
+                  <span className="text-[#0B1F3A]">{s}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Sectors in this city */}
         <section>
           <h2 className="text-2xl font-bold text-[#0B1F3A] mb-6">
@@ -144,6 +168,19 @@ export function LocationPage() {
             ))}
           </div>
         </section>
+
+        {/* Districts served (Arabic local SEO) */}
+        {isAr && districts.length > 0 && (
+          <section>
+            <h2 className="text-2xl font-bold text-[#0B1F3A] mb-6">{`نخدم جميع مناطق ${c.name}`}</h2>
+            <p className="text-gray-600 mb-5 leading-relaxed">{`نوفّر خدمات الحراسة الأمنية في مختلف أحياء ومناطق ${c.name}، ومنها:`}</p>
+            <div className="flex flex-wrap gap-3">
+              {districts.map((d) => (
+                <span key={d} className="bg-white border border-gray-200 rounded-full px-5 py-2.5 text-gray-700">{d}</span>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* FAQ */}
         <section>

@@ -1,14 +1,37 @@
 {
   "order": 10,
   "slug": "abha",
+  "districts": [
+    "المحالة",
+    "الموظفين",
+    "النميص",
+    "الخالدية",
+    "المنسك"
+  ],
   "ar": {
     "name": "أبها",
     "region": "منطقة عسير",
-    "blurb": "وجهة الجنوب السياحية، بحاجة لحراسة المنتجعات والفنادق والوجهات السياحية."
+    "blurb": "وجهة الجنوب السياحية، بحاجة لحراسة المنتجعات والفنادق والوجهات السياحية.",
+    "intro": "أبها عروس الجنوب السياحية، وتؤمّن أرتال فيها المنتجعات والفنادق والوجهات السياحية والمجمعات التجارية. يرتفع الطلب على الحراسة في مواسم السياحة، ونغطّيه بكوادر مدرّبة على المواقع عالية الإقبال.",
+    "sectors": [
+      "المنتجعات والفنادق",
+      "الوجهات السياحية",
+      "المجمعات التجارية",
+      "المجمعات السكنية",
+      "المنشآت الخدمية"
+    ]
   },
   "en": {
     "name": "Abha",
     "region": "Asir Region",
-    "blurb": "The southern tourist destination, needing guarding for resorts, hotels and attractions."
+    "blurb": "The southern tourist destination, needing guarding for resorts, hotels and attractions.",
+    "intro": "Abha is the south’s leading tourist city. Artal secures resorts, hotels, attractions and commercial complexes, with trained personnel to cover the rise in demand during tourism seasons.",
+    "sectors": [
+      "Resorts & hotels",
+      "Tourist attractions",
+      "Commercial complexes",
+      "Residential complexes",
+      "Service facilities"
+    ]
   }
 }

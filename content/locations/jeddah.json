@@ -1,14 +1,38 @@
 {
   "order": 1,
   "slug": "jeddah",
+  "districts": [
+    "الروضة",
+    "الحمراء",
+    "الشاطئ",
+    "أبحر الشمالية",
+    "السلامة",
+    "النزهة"
+  ],
   "ar": {
     "name": "جدة",
     "region": "منطقة مكة المكرمة",
-    "blurb": "الميناء التجاري الأهم على البحر الأحمر، بفرص واسعة لحراسة الموانئ والمولات والمستودعات."
+    "blurb": "الميناء التجاري الأهم على البحر الأحمر، بفرص واسعة لحراسة الموانئ والمولات والمستودعات.",
+    "intro": "جدة الميناء التجاري الأهم وعاصمة سياحية على البحر الأحمر، وتؤمّن أرتال فيها الفنادق والمولات والمنشآت المينائية والمستودعات. يرتفع الطلب على الحراسة في مواسم العمرة والصيف، ونوفّر كوادر مدرّبة لتغطية هذه الذروة باحترافية.",
+    "sectors": [
+      "الفنادق والمنتجعات",
+      "المولات والمراكز التجارية",
+      "المنشآت المينائية والمستودعات",
+      "الأبراج والمجمعات السكنية",
+      "المنشآت الخدمية والترفيهية"
+    ]
   },
   "en": {
     "name": "Jeddah",
     "region": "Makkah Region",
-    "blurb": "The key Red Sea commercial port, with broad demand for port, mall and warehouse security."
+    "blurb": "The key Red Sea commercial port, with broad demand for port, mall and warehouse security.",
+    "intro": "Jeddah is the key Red Sea commercial port and a major tourist city. Artal secures hotels, malls, port facilities and warehouses, with trained personnel to cover peak demand during Umrah and summer seasons.",
+    "sectors": [
+      "Hotels & resorts",
+      "Malls & commercial centers",
+      "Port facilities & warehouses",
+      "Towers & residential complexes",
+      "Service & leisure facilities"
+    ]
   }
 }
