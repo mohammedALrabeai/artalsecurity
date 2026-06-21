@@ -28,13 +28,13 @@ export function HomePage() {
       <SEO
         title={
           isAr
-            ? 'شركة أرتال الموحدة للحراسات الأمنية | حراسة المنشآت في السعودية'
-            : 'Artal Unified Security Services | Licensed Security Guarding in Saudi Arabia'
+            ? 'شركة حراسات أمنية في السعودية — مرخّصة (361) | أرتال الموحدة'
+            : 'Security Guarding Company in Saudi Arabia — Licensed (No. 361) | Artal'
         }
         description={
           isAr
-            ? 'شركة حراسات أمنية مرخّصة من وزارة الداخلية (ترخيص رقم 361). حراسة احترافية للمنشآت الصناعية والتجارية والمشاريع والمنشآت الحكومية في جميع مناطق المملكة العربية السعودية.'
-            : 'Licensed by the Ministry of Interior (License No. 361). Professional manned guarding for industrial, commercial, construction and government facilities across Saudi Arabia.'
+            ? 'أرتال الموحدة شركة حراسات أمنية مرخّصة من وزارة الداخلية (ترخيص 361). نؤمّن المنشآت الصناعية والتجارية والمشاريع والجهات الحكومية في كل مناطق المملكة بكوادر مدرّبة وعمليات على مدار الساعة. اطلب عرض سعر الآن.'
+            : 'Artal Unified is a licensed security guarding company (Ministry of Interior No. 361). We secure industrial, commercial, construction and government facilities across Saudi Arabia with trained personnel and 24/7 operations. Request a quote today.'
         }
         keywords={
           isAr
