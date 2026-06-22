@@ -1,15 +1,19 @@
 import { Phone, Mail, MessageCircle, MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { SETTINGS } from '../data/settings';
 
 export function FloatingContactBar() {
   const { language } = useLanguage();
+
+  // رقم الاتصال الأساسي من الإعدادات (رقم الاستفسار) — قابل للتعديل من /admin
+  const primaryPhone = SETTINGS.contact.phones[0];
 
   const quickContacts = [
     {
       icon: Phone,
       label: language === 'ar' ? 'اتصل الآن' : 'Call Now',
-      href: 'tel:+966133449993',
-      value: '0133449993',
+      href: `tel:+966${primaryPhone.substring(1)}`,
+      value: primaryPhone,
       bgColor: 'bg-gradient-to-br from-[#EFB621] to-[#d9a41d]',
       hoverShadow: 'hover:shadow-[#EFB621]/50',
     },

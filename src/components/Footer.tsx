@@ -5,22 +5,15 @@ import { ScrollReveal } from './ScrollReveal';
 import { SECTORS } from '../data/sectors';
 import { SERVICES } from '../data/services';
 import { KeywordLinks } from './KeywordLinks';
+import { SETTINGS } from '../data/settings';
 
 export function Footer() {
   const { t, language } = useLanguage();
   const localePath = useLocalePath();
 
-  const emails = [
-    'info@artalgroup.net',
-    'sultan@artalgroup.net',
-    'abm@artalgroup.net',
-    'nma@artalgroup.net'
-  ];
-
-  const phones = [
-    '0133449993',
-    '0133612002'
-  ];
+  // التواصل يُقرأ من content/settings.json (قابل للتعديل من /admin)
+  const emails = SETTINGS.contact.emails;
+  const phones = SETTINGS.contact.phones;
 
   const footerLinks = {
     company: [
