@@ -23,6 +23,11 @@ const ORGANIZATION = {
     'Licensed private security guarding company in Saudi Arabia (Ministry of Interior — High Authority for Industrial Security, License No. 361), serving industrial, commercial, construction and government facilities.',
   telephone: '+966133449993',
   email: 'info@artalgroup.net',
+  contactPoint: [
+    { '@type': 'ContactPoint', telephone: '+966581797003', contactType: 'sales', areaServed: 'SA', availableLanguage: ['ar', 'en'] },
+    { '@type': 'ContactPoint', telephone: '+966595639648', contactType: 'customer service', areaServed: 'SA', availableLanguage: ['ar', 'en'] },
+    { '@type': 'ContactPoint', telephone: '+966593222287', contactType: 'technical support', areaServed: 'SA', availableLanguage: ['ar', 'en'] },
+  ],
   address: {
     '@type': 'PostalAddress',
     postOfficeBoxNumber: '1218',
@@ -60,6 +65,8 @@ const ORGANIZATION = {
     'https://www.youtube.com/@ArtalGroup',
     'https://t.me/artalgroup1',
     'https://t.snapchat.com/O9T1Eyj9',
+    'https://play.google.com/store/apps/details?id=com.intshar.artalapp',
+    'https://apps.apple.com/us/app/artal/id6740813953',
   ],
 };
 
