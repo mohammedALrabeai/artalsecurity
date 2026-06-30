@@ -306,6 +306,27 @@ export function Footer() {
           </ScrollReveal>
         </div>
 
+        {/* Embedded location map (الموقع على الخريطة) */}
+        <ScrollReveal direction="up" delay={200}>
+          <div className="mt-12">
+            <h4 className="text-lg mb-4 flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-[#EFB621]" />
+              {language === 'ar' ? 'موقعنا على الخريطة' : 'Find Us on the Map'}
+            </h4>
+            <div className="rounded-2xl overflow-hidden border border-gray-800 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d222.200110936927!2d49.65379458832338!3d26.992166264330674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e35a16f51fa14f9%3A0x78f3cfbcdfe12d3!2sArtal%20unified%20security%20services%20company!5e0!3m2!1sen!2ssa!4v1782811799917!5m2!1sen!2ssa"
+                title={language === 'ar' ? 'موقع شركة أرتال الموحدة للحراسات الأمنية على خرائط جوجل' : 'Artal Unified Security Services location on Google Maps'}
+                className="w-full h-[300px] md:h-[360px]"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+          </div>
+        </ScrollReveal>
+
         {/* Keyword / service quick-links (internal links for SEO) */}
         <KeywordLinks />
 
