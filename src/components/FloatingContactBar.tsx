@@ -36,7 +36,7 @@ export function FloatingContactBar() {
     {
       icon: MapPin,
       label: language === 'ar' ? 'الموقع' : 'Location',
-      href: 'https://maps.app.goo.gl/2oDPndRUm5zFiGSS9',
+      href: SETTINGS.contact.mapUrl,
       value: language === 'ar' ? 'الخريطة' : 'Map',
       bgColor: 'bg-gradient-to-br from-red-500 to-red-600',
       hoverShadow: 'hover:shadow-red-500/50',

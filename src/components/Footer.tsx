@@ -249,7 +249,7 @@ export function Footer() {
                   </div>
                 </div>
                 <a 
-                  href="https://maps.app.goo.gl/2oDPndRUm5zFiGSS9"
+                  href={SETTINGS.contact.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[#EFB621] hover:text-[#d9a41d] transition-colors text-sm mt-2"

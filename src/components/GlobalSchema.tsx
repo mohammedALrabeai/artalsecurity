@@ -36,7 +36,7 @@ const ORGANIZATION = {
     addressRegion: 'Eastern Province',
     addressCountry: 'SA',
   },
-  hasMap: 'https://maps.app.goo.gl/2oDPndRUm5zFiGSS9',
+  hasMap: 'https://maps.app.goo.gl/VfA6QRWgedJArMKA9',
   areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
